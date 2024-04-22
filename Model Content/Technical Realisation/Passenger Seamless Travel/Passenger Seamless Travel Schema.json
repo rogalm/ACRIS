@@ -1,0 +1,1633 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "http://iec.ch/TC57/Passenger Seamless Travel TR#",
+	"type": "object",
+	"properties":
+	{
+		"Passenger Seamless Travel TR":
+		{
+			"type": "object",
+			"anyOf":
+			[
+				{ "$ref": "#/definitions/Address" },
+				{ "$ref": "#/definitions/Aircraft Movement" },
+				{ "$ref": "#/definitions/Aircraft Movement Status" },
+				{ "$ref": "#/definitions/Airline Party" },
+				{ "$ref": "#/definitions/Airline Party Information Request" },
+				{ "$ref": "#/definitions/Airport Facility" },
+				{ "$ref": "#/definitions/Airport Facility Information Request" },
+				{ "$ref": "#/definitions/Application" },
+				{ "$ref": "#/definitions/Bag Item" },
+				{ "$ref": "#/definitions/Bag Item Information Request" },
+				{ "$ref": "#/definitions/Bag Item Status" },
+				{ "$ref": "#/definitions/Date Time Period" },
+				{ "$ref": "#/definitions/Day Time Period" },
+				{ "$ref": "#/definitions/Flight Information Request" },
+				{ "$ref": "#/definitions/Flight Service Bookmark" },
+				{ "$ref": "#/definitions/Location" },
+				{ "$ref": "#/definitions/Location Type" },
+				{ "$ref": "#/definitions/Lost and Found Item" },
+				{ "$ref": "#/definitions/Passenger Party" },
+				{ "$ref": "#/definitions/Passenger Party Credentials" },
+				{ "$ref": "#/definitions/Passenger Party Planned Movement" },
+				{ "$ref": "#/definitions/Passenger Party Travel Document" },
+				{ "$ref": "#/definitions/Reservation Request" },
+				{ "$ref": "#/definitions/Retail Service" },
+				{ "$ref": "#/definitions/Security Queue Waiting" },
+				{ "$ref": "#/definitions/Service" },
+				{ "$ref": "#/definitions/Service Bookmark" },
+				{ "$ref": "#/definitions/Service Information Request" },
+				{ "$ref": "#/definitions/Service Type" },
+				{ "$ref": "#/definitions/System" },
+				{ "$ref": "#/definitions/Time Period" },
+				{ "$ref": "#/definitions/Weather" },
+				{ "$ref": "#/definitions/Weather Information Request" }
+			]
+		}
+	},
+	"definitions":
+	{
+		"Address" : 
+		{
+			"type": "object",
+			"description" : "Information about a unique location for 1) a physical or geographical location or 2) an Internet or IP address. \n\nInformation about the place where a person or organization can be found or communicated with\n",
+			"properties":
+			{
+				"Address Category":
+				{
+					"description" : "Information about the use of an address, such as business, residential.",
+					"type" : "Address Category",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"City":
+				{
+					"description" : "Information about the residence city of a passenger party",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Country":
+				{
+					"description" : "Information about the residence country of a passenger party",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"County":
+				{
+					"description" : "Information about the residence country of a passenger party",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Number":
+				{
+					"description" : "Information about the unique number of the address. It could be a house number or e-mail address",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Post Code":
+				{
+					"description" : "Information about the residence post code or zip code of a passenger party",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Province":
+				{
+					"description" : "Information about the residence province of a passenger party",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"State":
+				{
+					"description" : "Information about the residence state of a passenger party",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Street":
+				{
+					"description" : "Information about the residence street of a passenger party",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Aircraft Movement" : 
+		{
+			"type": "object",
+			"description" : "Information relating to planned or spontaneous change in location or movement of an Aircraft which is of interest to Heathrow Airport",
+			"properties":
+			{
+				"Actual Time Of Arrival":
+				{
+					"description" : "ATA. The actual time of arrival of an inbound flight",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Actual Time Of Departure":
+				{
+					"description" : "ATD. The actual time of departure for an outbound flight",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Aircarft Terminal":
+				{
+					"description" : "Terminal where the aircraft is located.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Airline Party Identifier":
+				{
+					"description" : "The Airline number that may be combined with the Flight number as proposed in the IATA standards",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Code":
+				{
+					"description" : "A business defined code assigned to the movement",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Departure Date":
+				{
+					"description" : "Information about the date of departure of a flight ( type of aircraft movement)",
+					"$ref" : "#/definitions/Date Time Period",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Free text",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Duration":
+				{
+					"description" : "The estimated flight duration time (the time  from off blocks to block time).",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"End Date":
+				{
+					"description" : "Information about the end date of the movement",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"IATA Identifier":
+				{
+					"description" : "Information about the IATA identification code for the flight. It is a combination of the IATA Identifier for the Airline and Flight Number",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"IATA Number":
+				{
+					"description" : "Information about the IATA number for the flight",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"ICAO Identifier":
+				{
+					"description" : "The ICAO identification for the flight. A single alphanumeric string giving an ICAO compliant representation of the main Flight Identifier. This will include a 3 character ICAO carrier code, flight number stripped of leading zeroes where necessary and an optional suffix character. Most flights using BAA Airports use IATA Flight Identifiers but certain users such as Air Traffic Control may wish to see information presented in ICAO format and such users can be shown the contents of this element rather than the main Flight Identifier.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"ICAO Number":
+				{
+					"description" : "Information about the  ICAO number for the flight.",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Scheduled Time":
+				{
+					"description" : "Informationn about the scheduled time for the flight",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Scheduled Time Of Arrival":
+				{
+					"description" : "Information about the scheduled date and time of arrival (STA) for an outbound flight (always UTC unless explicitly used within a public container such as with Advance Passenger Information).",
+					"type" : "DateTime ",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Scheduled Time Of Departure":
+				{
+					"description" : "Information about the scheduled date and time of departure (STD) for an outbound flight (always UTC unless explicitly used within a public container such as with Advance Passenger Information).",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Service":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Service" }
+				},
+				"Start Date":
+				{
+					"description" : "Information about the start date of the flight. The scheduled flight origin date based on the flight not the flight leg.  This date must not change once intialized in an AIDX message.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Aircraft Movement Status" : 
+		{
+			"type": "object",
+			"description" : "Information that describes the condition of a flight based on the values of its attributes",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes the condition or status of a flight",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies the condition or status of a flight",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Name":
+				{
+					"description" : "Information about the business name for the flight status",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"is condition of":
+				{
+					"$ref" : "#/definitions/Aircraft Movement",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Airline Party" : 
+		{
+			"type": "object",
+			"description" : "Information about an organisation that operates scheduled flights utilising Aircrafts as resources",
+			"properties":
+			{
+				"Contact":
+				{
+					"description" : "Information about the  Airline contact details - telephone, email, etc",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Country":
+				{
+					"description" : "Information that describes the country of registration of the Airline",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Information that describes the Airline",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"IATA Identifier":
+				{
+					"description" : "Information about a unique identifier assigned by ICAO to identify the Airline",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"ICAO Identifer":
+				{
+					"description" : "Information about a unique identifier assigned by ICAO to identify the Airline",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Operational Location":
+				{
+					"description" : "Information that describes the operational base location of the Airline",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Type":
+				{
+					"description" : "Information about the  type of Airline - Marketing or Operating Airline",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Airline Party Information Request" : 
+		{
+			"type": "object",
+			"description" : "A subset of Airline information requested by a Passenger\n",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes the Airline information",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies the Airline data",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"describe":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Airline Party" }
+				}
+			}
+		},
+		"Airport Facility" : 
+		{
+			"type": "object",
+			"description" : "Information about a building or infrastructure used to provide a air transport service.\n",
+			"properties":
+			{
+				"Airport Facility Information Request":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Airport Facility Information Request" }
+				},
+				"Arrival Airport":
+				{
+					"description" : "Information about the destination of flights",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Capacity":
+				{
+					"description" : "Information about the maximum capacity level of the Airport",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Departure Airport":
+				{
+					"description" : "Information about the originating Airport",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Information about the description of the Airport",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Embarkation Airport":
+				{
+					"description" : "Information about the Airport where the Passenger boarded the flight",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Type":
+				{
+					"description" : "Information about the  subdivision of the Airport facilities involved in the provision of services",
+					"type" : "FacilityType",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Airport Facility Information Request" : 
+		{
+			"type": "object",
+			"description" : "A subset of information requested by the passenger that describes the Airport. Examples include security waiting times and information on lost items\n",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes the Airport information",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies the Airport information",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Application" : 
+		{
+			"type": "object",
+			"description" : "Information about the software components that deliver information services to a person or other software components\n",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes an application",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies an application",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"System":
+				{
+					"description" : "Information that describes the system that hosts the application",
+					"$ref" : "#/definitions/System",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Bag Item" : 
+		{
+			"type": "object",
+			"description" : "A bag is a logistic item owned by the passenger but transported and managed by the Airline and Airports.\n\n",
+			"properties":
+			{
+				"Bag Item Information Request":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Bag Item Information Request" }
+				},
+				"Cabin Class":
+				{
+					"description" : "Information about a logistic item that indicates the travel class category of the owner as assigned by the Airline. It may also be known as the passenger class of a bag. This information is unique to every airline.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Check-in Date":
+				{
+					"description" : "Information about the date that the bag was identified at a check in desk.",
+					"$ref" : "#/definitions/Date Time Period",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Check-in Location":
+				{
+					"description" : "Information that describes the location where the check-in event for the bag occurred.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Check-in Time":
+				{
+					"description" : "Information about the time that the bag was identified at a check in desk.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Checked Weight":
+				{
+					"description" : "Information that describes the checked weight of a logistic item",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Information that describes the bag",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Format Code":
+				{
+					"description" : "Format code for Boarding pass issued, can only be M for Multiple, see Reso 792",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Global Unique Identifier":
+				{
+					"description" : "Information about an identifier assigned by the business to a logistic item which is unique throughout the entire item management process",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Handler":
+				{
+					"description" : "Information about the handling agent associated with the logistic item.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Height":
+				{
+					"description" : "Information about the height physical dimension of a logistic item.",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies the bag for example the bag tag",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Length":
+				{
+					"description" : "Information about the length physical dimension of the bag",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Number":
+				{
+					"description" : "Information about the document number that identifies the bag.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Owner":
+				{
+					"description" : "Information about the owner of the bag",
+					"$ref" : "#/definitions/Passenger Party",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Reclaim Location":
+				{
+					"description" : "Information about the reclaim location for the bag",
+					"$ref" : "#/definitions/Location",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Scan Date":
+				{
+					"description" : "Information about the date that a logistic item was scanned",
+					"$ref" : "#/definitions/Date Time Period",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Scan Time":
+				{
+					"description" : "Information about the time that a logistic item was scanned",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Volume":
+				{
+					"description" : "Information about the volume of the bag",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Width":
+				{
+					"description" : "Information about the measured width of the bag",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Bag Item Information Request" : 
+		{
+			"type": "object",
+			"description" : "Information request about passenger bags at the Airport",
+			"properties":
+			{
+				"Date":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Bag Item Status" : 
+		{
+			"type": "object",
+			"description" : "Information that describes the condition of a bag based on the values of its attributes",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes the condition or state of a bag",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies the condition or state of a bag",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Name":
+				{
+					"description" : "The business name for the status or condition of the bag",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"is condition of":
+				{
+					"$ref" : "#/definitions/Bag Item",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Date Time Period" : 
+		{
+			"type": "object",
+			"description" : "The information about the specific day of an event, a type of  (category of) Time.\n",
+			"properties":
+			{
+				"Day Of The Month":
+				{
+					"description" : "Day number within the current month, 1 through 31.",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Day Of The Week Name":
+				{
+					"description" : "Day of the week, Sunday through Saturday.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Day Of The Week Number":
+				{
+					"description" : "Day number within the current week, 1 through 7.",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Day Of The Year":
+				{
+					"description" : "Day number within the current year, 1 through 366.",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Month Name":
+				{
+					"description" : "Month name",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Month Numeric":
+				{
+					"description" : "Month number in the calendar year, 1 through 12.",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Week Number Within Current Month":
+				{
+					"description" : "Week number within the current month",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Week Number Within Current Year":
+				{
+					"description" : "Week number within the current year, 1 through 53 (ie 52+1).",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Year":
+				{
+					"description" : "Year identifier in YYYY format.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Day Time Period" : 
+		{
+			"type": "object",
+			"description" : "A particular day of the week (Mon-Sun)",
+			"properties":
+			{
+				"Fri":
+				{
+					"type" : "",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Mon":
+				{
+					"type" : "",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Sat":
+				{
+					"type" : "",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Sun":
+				{
+					"type" : "",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Thu":
+				{
+					"type" : "",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Tue":
+				{
+					"type" : "",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Wed":
+				{
+					"type" : "",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Flight Information Request" : 
+		{
+			"type": "object",
+			"properties":
+			{
+				"Request Date":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Request Time":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Flight Service Bookmark" : 
+		{
+			"type": "object",
+			"description" : "Information about the search results of a query on flight information that may be saved by the passenger",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes the bookmark",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies the bookmark",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Location" : 
+		{
+			"type": "object",
+			"description" : "Information about a geographic position, line or area.\n",
+			"properties":
+			{
+				"Arrival Airport":
+				{
+					"description" : "Information about the place or port at which a passenger arrives",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Departure Airport":
+				{
+					"description" : "Information about the place or port from which a passenger departs",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "The description assigned by the business to the location",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Type":
+				{
+					"description" : "The list of types of location",
+					"$ref" : "#/definitions/Location Type",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"designates":
+				{
+					"$ref" : "#/definitions/Address",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Location Type" : 
+		{
+			"type": "object",
+			"description" : "Location type may be Geopolitical or Geospatial.",
+			"properties":
+			{
+				"Geopolitical":
+				{
+					"description" : "This is the geopolitical category for a location",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Geospatial":
+				{
+					"description" : "This is the geospatial category for a location",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"define":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Location" }
+				}
+			}
+		},
+		"Lost and Found Item" : 
+		{
+			"type": "object",
+			"description" : "Information about a collection of data and information with identified boundaries. Examples include paper documents and digital / electronic messages\n",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes content.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Format Code":
+				{
+					"description" : "Format code for Boarding pass issued, can only be M for Multiple, see Reso 792",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information about the Identifier of information content e.g. the passport or visa number",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Number":
+				{
+					"description" : "Information about the document number.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Passenger Party" : 
+		{
+			"type": "object",
+			"description" : "Information about individuals, identifiable groups that purchase and use air transport services. Examples include transfer and final destination passengers",
+			"properties":
+			{
+				"Bag Item Information Request":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Bag Item Information Request" }
+				},
+				"Citizenship":
+				{
+					"description" : "Information on the status of a citizen with rights and duties",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Contact":
+				{
+					"description" : "Information about the Party contact Details - telephone, email, etc.",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Country":
+				{
+					"description" : "Primary country of residence",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Date Of Birth":
+				{
+					"description" : "Information about the date of birth of a party",
+					"type" : "Time Period",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Information that describes the party",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Gender":
+				{
+					"description" : "Information on the gender of a passenger party",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Nationality":
+				{
+					"description" : "Information on the status of belonging to a particular nation by birth or naturalisation.",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Number":
+				{
+					"description" : "A unique number assigned by the business or any other authority to track a Passenger Party.",
+					"type" : "integer",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Place Of Birth":
+				{
+					"description" : "Information about the place of birth of a party",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Service Information Request":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Service Information Request" }
+				},
+				"Status":
+				{
+					"description" : "Information regarding status of passenger. See Resolution 792 attachment C for the values to be used",
+					"$ref" : "#/definitions/Aircraft Movement Status",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Weather Information Request":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Weather Information Request" }
+				},
+				"makes":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Reservation Request" }
+				},
+				"may present":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Passenger Party Travel Document" }
+				},
+				"request":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Airline Party Information Request" }
+				},
+				"resides at":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Address" }
+				},
+				"saves":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Flight Service Bookmark" }
+				},
+				"use":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Retail Service" }
+				}
+			}
+		},
+		"Passenger Party Credentials" : 
+		{
+			"type": "object",
+			"description" : "Information that describes the certification, privileges and access rights of a passenger. Examples include access privileges provided by the VISA and Passports \n",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes the privileges associated with a certifying document",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identify the privileges associated with a certifying document e.g. the passport or visa number",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Privileges":
+				{
+					"description" : "detailed information about the commitment and privileges provided by the document",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Type":
+				{
+					"description" : "Information about the type of passenger credential",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Passenger Party Planned Movement" : 
+		{
+			"type": "object",
+			"description" : "A collection of data and information that describes the passenger itinerary.  Examples include final destination, time of arrival etc\n",
+			"properties":
+			{
+				"Destination":
+				{
+					"description" : "Information that describes the destination",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "The Identifier of information content",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Time Of Arrival":
+				{
+					"description" : "Information on time of arrival at destination",
+					"$ref" : "#/definitions/Time Period",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Weather Condition":
+				{
+					"description" : "Information that describes the weather condition at destination of travel",
+					"$ref" : "#/definitions/Weather Information Request",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Passenger Party Travel Document" : 
+		{
+			"type": "object",
+			"description" : "Information that identifies a person and the privileges provided by a certification authority including a government agency. Examples include the passport information and other travel documents\n",
+			"properties":
+			{
+				"Certification Authority":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Information that describes the travel document",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Expiry Date":
+				{
+					"description" : "Information about the expiry date for the passport or visa",
+					"$ref" : "#/definitions/Date Time Period",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies the travel document",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Issued Date":
+				{
+					"description" : "Information about the document number.",
+					"$ref" : "#/definitions/Date Time Period",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Type":
+				{
+					"description" : "Information that describes the type of travel document",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"provide":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Passenger Party Credentials" }
+				}
+			}
+		},
+		"Reservation Request" : 
+		{
+			"type": "object",
+			"description" : "Information about the reservation request made by a passenger",
+			"properties":
+			{
+				"Date":
+				{
+					"description" : "Information about the date the reservation was made",
+					"$ref" : "#/definitions/Date Time Period",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Information that describes the reservation request made by the passenger",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Flight Service":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Service" }
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies the reservation request made by a passenger",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Time":
+				{
+					"description" : "Information about the time the reservation was made",
+					"$ref" : "#/definitions/Time Period",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Retail Service" : 
+		{
+			"type": "object",
+			"description" : "Information about the products, proposals, expected or agreed duties, functions or activities which BAA offers to other Parties.",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes an offering",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies an offering",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Security Queue Waiting" : 
+		{
+			"type": "object",
+			"description" : "Information about a collection of data and information with identified boundaries. Examples include paper documents and digital / electronic messages",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes content.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Format Code":
+				{
+					"description" : "Format code for Boarding pass issued, can only be M for Multiple, see Reso 792",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information about the Identifier of information content e.g. the passport or visa number",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Number":
+				{
+					"description" : "Information about the document number.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Service" : 
+		{
+			"type": "object",
+			"description" : "Information about the expected or agreed duties, functions or activities which BAA offers to other Parties.",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "The description of the service",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Flight Service Reservation":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Reservation Request" }
+				},
+				"IATA Service Type":
+				{
+					"description" : "Information about IATA classification codes for Services",
+					"type" : "IATA Service Type",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "The identifier for the service",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Status":
+				{
+					"type" : "Service Status",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Type":
+				{
+					"description" : "The type of the service e.g. check-in, security",
+					"type" : "Service Type",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Service Bookmark" : 
+		{
+			"type": "object",
+			"description" : "Information about the search results of a query on service information that may be saved by the passenger\n",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes the service bookmark",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information about the service bookmark",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Service Information Request":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Service Information Request" }
+				}
+			}
+		},
+		"Service Information Request" : 
+		{
+			"type": "object",
+			"description" : "Information request about the collection of business services available at the Airport",
+			"properties":
+			{
+				"Date":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Information that describe the service information",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information identifier",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Service Type" : 
+		{
+			"type": "object",
+			"description" : "This is the type of service provided by a Party",
+			"properties":
+			{
+				"Code":
+				{
+					"description" : "Information about the code of the service category",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Information about the description of the service category",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Service":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Service" }
+				}
+			}
+		},
+		"System" : 
+		{
+			"type": "object",
+			"description" : "Information about instrumentality that combines interrelated interacting artifacts designed to work as a coherent entity.\n\nFor example, the expression, \"the system consists of a motor and a small computer\" indicates that the system comprises of two artefacts.\n",
+			"properties":
+			{
+				"Description":
+				{
+					"description" : "Information that describes a system",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies a system",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Time Period" : 
+		{
+			"type": "object",
+			"description" : "Information about the start and end time for business events of interest to Heathrow Airport.",
+			"properties":
+			{
+				"Date":
+				{
+					"description" : "Information about the categories of date items",
+					"$ref" : "#/definitions/Date Time Period",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Day Of the Week":
+				{
+					"description" : "Information about the day of the week",
+					"$ref" : "#/definitions/Day Time Period",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Duration":
+				{
+					"description" : "It is the difference between the start time and end time, typically in seconds",
+					"type" : "integer",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Effective Date":
+				{
+					"description" : "Indicates the starting date.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"End":
+				{
+					"description" : "The end time of the incident",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Expire Date":
+				{
+					"description" : "Indicates the ending date.",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Start":
+				{
+					"description" : "The start time of the incident",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Weather" : 
+		{
+			"type": "object",
+			"properties":
+			{
+				"Air Temperature":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Cloud Condition":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Date":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Dewpoint Temperature":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Feature Of Interest":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Horizontal Visibility":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Location":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Observation":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Procedure":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Sampling":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Vertical Visibility":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Weather Information Request":
+				{
+					"type" : "array",
+					"items" : { "$ref":"#/definitions/Weather Information Request" }
+				},
+				"Wind Direction":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Wind Speed":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		},
+		"Weather Information Request" : 
+		{
+			"type": "object",
+			"description" : "A passenger request for information about the weather condition of interest to the Passenger. This includes the general weather condition and the temperature\n",
+			"properties":
+			{
+				"Date":
+				{
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				},
+				"Description":
+				{
+					"description" : "Information that describes the weather information",
+					"type" : "string",
+					"minItems" : 0,
+					"maxItems" : 1
+				},
+				"Identifier":
+				{
+					"description" : "Information that identifies the weather information",
+					"type" : "string",
+					"minItems" : 1,
+					"maxItems" : 1
+				}
+			}
+		}
+	}
+}
