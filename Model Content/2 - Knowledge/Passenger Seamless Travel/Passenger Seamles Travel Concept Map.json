@@ -1,8 +1,8 @@
 {
   "Concept Maps": 
-  {
-    "Passenger":
+  [
     {
+      "term": "Passenger",
       "concept": "Party",
       "relations": 
       [
@@ -23,8 +23,8 @@
         }
       ]
     },
-    "Aircraft Movement" :
     {
+      "term": "Aircraft Movement",
       "concept": "Movement",
       "relations": 
       [
@@ -35,5 +35,5 @@
         }
       ]
     }
-  }
+  ]
 }
