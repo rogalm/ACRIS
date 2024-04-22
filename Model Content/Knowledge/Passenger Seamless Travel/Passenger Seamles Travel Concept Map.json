@@ -1,0 +1,39 @@
+{
+  "Concept Maps": 
+  {
+    "Passenger":
+    {
+      "concept": "Party",
+      "relations": 
+      [
+        {
+          "association": "books",
+          "term": "Airport Aervice",
+          "concept": "Offering",
+        },
+        {
+          "association": "creates",
+          "term": "Service Bookmark",
+          "concept": "Information Content",
+        }
+        {
+          "association": "provides",
+          "term": "Traveller Credentials",
+          "concept": "Information Content",
+        }
+      ],
+    }
+    "Aircraft Movement" :
+    {
+      "concept": "Movement"
+      "relations": 
+      [
+        {
+          "association": "is operated by",
+          "term": "Aircraft Operator",
+          "concept": "Party",
+        }
+      ]
+    }
+  }
+}
