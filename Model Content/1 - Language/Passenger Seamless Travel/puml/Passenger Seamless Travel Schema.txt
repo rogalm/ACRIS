@@ -1,0 +1,62 @@
+@startuml
+class "ATM" 
+{
+	In
+}
+
+class "Account"
+{
+	A passenger account is a formal contractual relationship established to provide for regular business services
+}
+
+class "Action"
+		{
+		}
+		
+class "Advertisement" 
+		{
+			Advertisement
+		}
+		
+class "Agent" 
+		{
+			Agent
+		}
+		
+class "Aircraft" 
+		{
+		}
+		
+class "Aircraft Information" 
+		{
+		}
+		
+class "Aircraft Movement" 
+		{
+		}
+
+class "Airline"
+		{
+			Airline
+		}
+		
+class "Airline Ground Handling Agent"
+		{
+			Airline or Ground handling agent
+		}
+		
+class "Airline Information"
+		{
+		}
+		
+class "Airline Operator"
+		{
+			Airline Operator
+		}
+		
+class "Airport" 
+		{
+			Airport
+		}
+		
+@enduml
