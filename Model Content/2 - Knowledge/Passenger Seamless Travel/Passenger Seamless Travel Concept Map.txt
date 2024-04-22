@@ -1,0 +1,13 @@
+@startuml
+class "Movement" as cl_movement
+class "Party" as cl_party
+class "Information Content" as cl_information_content
+class "Offering" as cl_offering
+
+cl_party "Passenger" --> "Airport Service" cl_offering : books
+cl_party "Passenger" --> "Service Bookmark" cl_information_content: creates
+cl_party "Passenger" --> "Traveller Credentials" cl_information_content: provides
+
+
+cl_movement "Aircraft Movement" --> "Party" cl_party: "is operated by"
+@enduml
