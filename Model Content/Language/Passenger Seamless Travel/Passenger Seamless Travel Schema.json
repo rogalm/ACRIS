@@ -1,0 +1,2028 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "http://iec.ch/TC57/Passenger Seamless Travel Schema#",
+	"type": "object",
+	"definitions":
+	{
+		"ATM" : 
+		{
+			"type": "object",
+			"description" : "In",
+			"properties":
+			{
+			}
+		},
+		"Account" : 
+		{
+			"type": "object",
+			"description" : "A passenger account is a formal contractual relationship established to provide for regular business services",
+			"properties":
+			{
+			}
+		},
+		"Action" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Advertisement" : 
+		{
+			"type": "object",
+			"description" : "Advertisement",
+			"properties":
+			{
+			}
+		},
+		"Agent" : 
+		{
+			"type": "object",
+			"description" : "Agent",
+			"properties":
+			{
+			}
+		},
+		"Aircraft" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Aircraft Information" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Aircraft Movement" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Airline" : 
+		{
+			"type": "object",
+			"description" : "Airline",
+			"properties":
+			{
+			}
+		},
+		"Airline Ground Handling Agent" : 
+		{
+			"type": "object",
+			"description" : "Airline or Ground handling agent",
+			"properties":
+			{
+			}
+		},
+		"Airline Information" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Airline Operator" : 
+		{
+			"type": "object",
+			"description" : "Airline Operator",
+			"properties":
+			{
+			}
+		},
+		"Airport" : 
+		{
+			"type": "object",
+			"description" : "Airport",
+			"properties":
+			{
+			}
+		},
+		"Airport Map" : 
+		{
+			"type": "object",
+			"description" : "Airport Map",
+			"properties":
+			{
+			}
+		},
+		"Airport Service" : 
+		{
+			"type": "object",
+			"description" : "Airport Service",
+			"properties":
+			{
+			}
+		},
+		"Airspace Movement" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Application" : 
+		{
+			"type": "object",
+			"description" : "Application",
+			"properties":
+			{
+			}
+		},
+		"Arrival" : 
+		{
+			"type": "object",
+			"description" : "Arrival",
+			"properties":
+			{
+			}
+		},
+		"Arrival Gate" : 
+		{
+			"type": "object",
+			"description" : "Arrival Gate",
+			"properties":
+			{
+			}
+		},
+		"Arrival Time" : 
+		{
+			"type": "object",
+			"description" : "Arrival Time",
+			"properties":
+			{
+			}
+		},
+		"Automated border control" : 
+		{
+			"type": "object",
+			"description" : "Automated border control",
+			"properties":
+			{
+			}
+		},
+		"Baggage Claim" : 
+		{
+			"type": "object",
+			"description" : "Baggage Claim",
+			"properties":
+			{
+			}
+		},
+		"Baggage Handler" : 
+		{
+			"type": "object",
+			"description" : "Baggage handler",
+			"properties":
+			{
+			}
+		},
+		"Baggage Reclaim" : 
+		{
+			"type": "object",
+			"description" : "Baggage Reclaim",
+			"properties":
+			{
+			}
+		},
+		"Baggage Status" : 
+		{
+			"type": "object",
+			"description" : "Baggage-status",
+			"properties":
+			{
+			}
+		},
+		"Booked Service" : 
+		{
+			"type": "object",
+			"description" : "Booked Service",
+			"properties":
+			{
+			}
+		},
+		"Booking Agent" : 
+		{
+			"type": "object",
+			"description" : "Booking Agent",
+			"properties":
+			{
+			}
+		},
+		"Booking Number" : 
+		{
+			"type": "object",
+			"description" : "Booking Number",
+			"properties":
+			{
+			}
+		},
+		"Booking Process" : 
+		{
+			"type": "object",
+			"description" : "Booking Process",
+			"properties":
+			{
+			}
+		},
+		"Booking Status" : 
+		{
+			"type": "object",
+			"description" : "Booking-status",
+			"properties":
+			{
+			}
+		},
+		"Business" : 
+		{
+			"type": "object",
+			"description" : "Business",
+			"properties":
+			{
+			}
+		},
+		"Cancellation" : 
+		{
+			"type": "object",
+			"description" : "Cancellation",
+			"properties":
+			{
+			}
+		},
+		"Car" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Catalogue of Services" : 
+		{
+			"type": "object",
+			"description" : "Catalogue of Services",
+			"properties":
+			{
+			}
+		},
+		"Category (restaurant, shop)" : 
+		{
+			"type": "object",
+			"description" : "Category (restaurant, shop)",
+			"properties":
+			{
+			}
+		},
+		"Check In Desk Location" : 
+		{
+			"type": "object",
+			"description" : "Check In Desk Location",
+			"properties":
+			{
+			}
+		},
+		"Checked-in baggage" : 
+		{
+			"type": "object",
+			"description" : "Checked-in baggage",
+			"properties":
+			{
+			}
+		},
+		"Confirmation" : 
+		{
+			"type": "object",
+			"description" : "Confirmation",
+			"properties":
+			{
+			}
+		},
+		"Contact" : 
+		{
+			"type": "object",
+			"description" : "Contact",
+			"properties":
+			{
+			}
+		},
+		"Coupons" : 
+		{
+			"type": "object",
+			"description" : "Coupons",
+			"properties":
+			{
+			}
+		},
+		"Credential" : 
+		{
+			"type": "object",
+			"description" : "Credential",
+			"properties":
+			{
+			}
+		},
+		"Data" : 
+		{
+			"type": "object",
+			"description" : "Data",
+			"properties":
+			{
+			}
+		},
+		"Data Privacy" : 
+		{
+			"type": "object",
+			"description" : "Data Privacy",
+			"properties":
+			{
+			}
+		},
+		"Data Providing Partner" : 
+		{
+			"type": "object",
+			"description" : "Data Providing Partner",
+			"properties":
+			{
+			}
+		},
+		"Database" : 
+		{
+			"type": "object",
+			"description" : "Database",
+			"properties":
+			{
+			}
+		},
+		"Date" : 
+		{
+			"type": "object",
+			"description" : "Date",
+			"properties":
+			{
+			}
+		},
+		"Default Airport" : 
+		{
+			"type": "object",
+			"description" : "Default Airport",
+			"properties":
+			{
+			}
+		},
+		"Default or Current Airport" : 
+		{
+			"type": "object",
+			"description" : "Default or current airport",
+			"properties":
+			{
+			}
+		},
+		"Delay" : 
+		{
+			"type": "object",
+			"description" : "Delay",
+			"properties":
+			{
+			}
+		},
+		"Delivery Address" : 
+		{
+			"type": "object",
+			"description" : "Delivery Address",
+			"properties":
+			{
+			}
+		},
+		"Departure" : 
+		{
+			"type": "object",
+			"description" : "Departure",
+			"properties":
+			{
+			}
+		},
+		"Departure Gate" : 
+		{
+			"type": "object",
+			"description" : "Departure Gate",
+			"properties":
+			{
+			}
+		},
+		"Departure Time" : 
+		{
+			"type": "object",
+			"description" : "Departure Time",
+			"properties":
+			{
+			}
+		},
+		"Description" : 
+		{
+			"type": "object",
+			"description" : "Description",
+			"properties":
+			{
+			}
+		},
+		"Destination" : 
+		{
+			"type": "object",
+			"description" : "Destination",
+			"properties":
+			{
+			}
+		},
+		"Destination Airport" : 
+		{
+			"type": "object",
+			"description" : "Destination Airport",
+			"properties":
+			{
+			}
+		},
+		"Detail" : 
+		{
+			"type": "object",
+			"description" : "Detail",
+			"properties":
+			{
+			}
+		},
+		"Dynamic Pricing" : 
+		{
+			"type": "object",
+			"description" : "Dynamic Pricing",
+			"properties":
+			{
+			}
+		},
+		"Economy" : 
+		{
+			"type": "object",
+			"description" : "Economy",
+			"properties":
+			{
+			}
+		},
+		"Elevators" : 
+		{
+			"type": "object",
+			"description" : "Elevators",
+			"properties":
+			{
+			}
+		},
+		"Eligibility" : 
+		{
+			"type": "object",
+			"description" : "Eligibility",
+			"properties":
+			{
+			}
+		},
+		"Email" : 
+		{
+			"type": "object",
+			"description" : "Email",
+			"properties":
+			{
+			}
+		},
+		"Email Address" : 
+		{
+			"type": "object",
+			"description" : "Email address",
+			"properties":
+			{
+			}
+		},
+		"End User" : 
+		{
+			"type": "object",
+			"description" : "End User",
+			"properties":
+			{
+			}
+		},
+		"Entry" : 
+		{
+			"type": "object",
+			"description" : "Entry",
+			"properties":
+			{
+			}
+		},
+		"Facility" : 
+		{
+			"type": "object",
+			"description" : "Facility",
+			"properties":
+			{
+			}
+		},
+		"Faster Access" : 
+		{
+			"type": "object",
+			"description" : "Faster Access",
+			"properties":
+			{
+			}
+		},
+		"Filter" : 
+		{
+			"type": "object",
+			"description" : "Filter",
+			"properties":
+			{
+			}
+		},
+		"Filterable List" : 
+		{
+			"type": "object",
+			"description" : "Filterable List",
+			"properties":
+			{
+			}
+		},
+		"Fleet" : 
+		{
+			"type": "object",
+			"description" : "Fleet",
+			"properties":
+			{
+			}
+		},
+		"Flexibility" : 
+		{
+			"type": "object",
+			"description" : "Flexibility",
+			"properties":
+			{
+			}
+		},
+		"Flight" : 
+		{
+			"type": "object",
+			"description" : "Flight",
+			"properties":
+			{
+			}
+		},
+		"Flight Delay" : 
+		{
+			"type": "object",
+			"description" : "Flight Delay",
+			"properties":
+			{
+			}
+		},
+		"Flight Number" : 
+		{
+			"type": "object",
+			"description" : "Flight Number",
+			"properties":
+			{
+			}
+		},
+		"Flight Plan" : 
+		{
+			"type": "object",
+			"description" : "Flight Plan",
+			"properties":
+			{
+			}
+		},
+		"Flight Service" : 
+		{
+			"type": "object",
+			"description" : "Flight Service",
+			"properties":
+			{
+			}
+		},
+		"Flight Status" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Form" : 
+		{
+			"type": "object",
+			"description" : "Form",
+			"properties":
+			{
+			}
+		},
+		"Gate" : 
+		{
+			"type": "object",
+			"description" : "Gate",
+			"properties":
+			{
+			}
+		},
+		"Gate Information" : 
+		{
+			"type": "object",
+			"description" : "Gate Info",
+			"properties":
+			{
+			}
+		},
+		"Gate Number" : 
+		{
+			"type": "object",
+			"description" : "Gate Number",
+			"properties":
+			{
+			}
+		},
+		"Global Airline Info" : 
+		{
+			"type": "object",
+			"description" : "Global Airline Info",
+			"properties":
+			{
+			}
+		},
+		"Good" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Government" : 
+		{
+			"type": "object",
+			"description" : "Government",
+			"properties":
+			{
+			}
+		},
+		"Ground Handler" : 
+		{
+			"type": "object",
+			"description" : "Ground Handler",
+			"properties":
+			{
+			}
+		},
+		"Ground Transportation" : 
+		{
+			"type": "object",
+			"description" : "Ground Transportation",
+			"properties":
+			{
+			}
+		},
+		"Guest" : 
+		{
+			"type": "object",
+			"description" : "Guest",
+			"properties":
+			{
+			}
+		},
+		"Heathrow Airport" : 
+		{
+			"type": "object",
+			"description" : "Heathrow Airport",
+			"properties":
+			{
+			}
+		},
+		"Home Airport" : 
+		{
+			"type": "object",
+			"description" : "Home Airport",
+			"properties":
+			{
+			}
+		},
+		"Hotel accomodation" : 
+		{
+			"type": "object",
+			"description" : "Hotel accomodation",
+			"properties":
+			{
+			}
+		},
+		"Identity Provider" : 
+		{
+			"type": "object",
+			"description" : "Identity Provider",
+			"properties":
+			{
+			}
+		},
+		"Information" : 
+		{
+			"type": "object",
+			"description" : "Information",
+			"properties":
+			{
+			}
+		},
+		"Information Content" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Input Field" : 
+		{
+			"type": "object",
+			"description" : "Input Field",
+			"properties":
+			{
+			}
+		},
+		"Item" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Lavatory" : 
+		{
+			"type": "object",
+			"description" : "Lavatory",
+			"properties":
+			{
+			}
+		},
+		"Length (number of items)" : 
+		{
+			"type": "object",
+			"description" : "Length (number of items)",
+			"properties":
+			{
+			}
+		},
+		"List" : 
+		{
+			"type": "object",
+			"description" : "List",
+			"properties":
+			{
+			}
+		},
+		"List Element" : 
+		{
+			"type": "object",
+			"description" : "List Element",
+			"properties":
+			{
+			}
+		},
+		"Local Airline Information" : 
+		{
+			"type": "object",
+			"description" : "Local Airline Info",
+			"properties":
+			{
+			}
+		},
+		"Local Availability" : 
+		{
+			"type": "object",
+			"description" : "Local Availability",
+			"properties":
+			{
+			}
+		},
+		"Local Info Phone Number" : 
+		{
+			"type": "object",
+			"description" : "Local Info Phone Number",
+			"properties":
+			{
+			}
+		},
+		"Local Weather" : 
+		{
+			"type": "object",
+			"description" : "Local Weather",
+			"properties":
+			{
+			}
+		},
+		"Local or external Service Providers" : 
+		{
+			"type": "object",
+			"description" : "Local or external Service Providers",
+			"properties":
+			{
+			}
+		},
+		"Location" : 
+		{
+			"type": "object",
+			"description" : "Location",
+			"properties":
+			{
+			}
+		},
+		"Lost & Found Counter" : 
+		{
+			"type": "object",
+			"description" : "Lost & Found Counter",
+			"properties":
+			{
+			}
+		},
+		"Lost & Found Procedure" : 
+		{
+			"type": "object",
+			"description" : "Lost & Found Procedure",
+			"properties":
+			{
+			}
+		},
+		"Lost Baggage" : 
+		{
+			"type": "object",
+			"description" : "Lost Baggage",
+			"properties":
+			{
+			}
+		},
+		"Map" : 
+		{
+			"type": "object",
+			"description" : "Map",
+			"properties":
+			{
+			}
+		},
+		"Matching Service" : 
+		{
+			"type": "object",
+			"description" : "Matching Service",
+			"properties":
+			{
+			}
+		},
+		"Menu Item" : 
+		{
+			"type": "object",
+			"description" : "Menu Item",
+			"properties":
+			{
+			}
+		},
+		"Missing Field" : 
+		{
+			"type": "object",
+			"description" : "Missing Field",
+			"properties":
+			{
+			}
+		},
+		"Movement" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Name" : 
+		{
+			"type": "object",
+			"description" : "Name",
+			"properties":
+			{
+			}
+		},
+		"Off-airport bag drop" : 
+		{
+			"type": "object",
+			"description" : "Off-airport bag drop",
+			"properties":
+			{
+			}
+		},
+		"Offered Service" : 
+		{
+			"type": "object",
+			"description" : "Offered Service",
+			"properties":
+			{
+			}
+		},
+		"Offering" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Offset" : 
+		{
+			"type": "object",
+			"description" : "Offset (position of the first item to be transferred)",
+			"properties":
+			{
+			}
+		},
+		"Onward Travel Information" : 
+		{
+			"type": "object",
+			"description" : "Onward Travel Information",
+			"properties":
+			{
+			}
+		},
+		"Open Booking" : 
+		{
+			"type": "object",
+			"description" : "Open Booking",
+			"properties":
+			{
+			}
+		},
+		"Opening Hours" : 
+		{
+			"type": "object",
+			"description" : "Opening Hours",
+			"properties":
+			{
+			}
+		},
+		"Operated Flight" : 
+		{
+			"type": "object",
+			"description" : "Operated Flight",
+			"properties":
+			{
+			}
+		},
+		"Optimal Travel Time" : 
+		{
+			"type": "object",
+			"description" : "Optimal Travel Time",
+			"properties":
+			{
+			}
+		},
+		"Optional Payment" : 
+		{
+			"type": "object",
+			"description" : "Optional Payment",
+			"properties":
+			{
+			}
+		},
+		"Origin" : 
+		{
+			"type": "object",
+			"description" : "Origin",
+			"properties":
+			{
+			}
+		},
+		"Origin Airport" : 
+		{
+			"type": "object",
+			"description" : "Origin Airport",
+			"properties":
+			{
+			}
+		},
+		"PAX" : 
+		{
+			"type": "object",
+			"description" : "PAX",
+			"properties":
+			{
+			}
+		},
+		"POI Search" : 
+		{
+			"type": "object",
+			"description" : "POI Search",
+			"properties":
+			{
+			}
+		},
+		"PRM Option" : 
+		{
+			"type": "object",
+			"description" : "PRM Option",
+			"properties":
+			{
+			}
+		},
+		"Parking" : 
+		{
+			"type": "object",
+			"description" : "Parking",
+			"properties":
+			{
+			}
+		},
+		"Partner" : 
+		{
+			"type": "object",
+			"description" : "Partner",
+			"properties":
+			{
+			}
+		},
+		"Party Role" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Passenger" : 
+		{
+			"type": "object",
+			"description" : "Passenger",
+			"properties":
+			{
+			}
+		},
+		"Passenger Information" : 
+		{
+			"type": "object",
+			"description" : "Pax Info",
+			"properties":
+			{
+			}
+		},
+		"Passenger Itinerary" : 
+		{
+			"type": "object",
+			"description" : "Passenger Itinery",
+			"properties":
+			{
+			}
+		},
+		"Passenger Movement" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Passenger Tracking" : 
+		{
+			"type": "object",
+			"description" : "Passenger Tracking",
+			"properties":
+			{
+			}
+		},
+		"Password" : 
+		{
+			"type": "object",
+			"description" : "Password",
+			"properties":
+			{
+			}
+		},
+		"Password Policy" : 
+		{
+			"type": "object",
+			"description" : "Password Policy",
+			"properties":
+			{
+			}
+		},
+		"Payment Provider" : 
+		{
+			"type": "object",
+			"description" : "Payment Provider",
+			"properties":
+			{
+			}
+		},
+		"Personal Preference" : 
+		{
+			"type": "object",
+			"description" : "Personal Preference",
+			"properties":
+			{
+			}
+		},
+		"Phone number" : 
+		{
+			"type": "object",
+			"description" : "Phone number",
+			"properties":
+			{
+			}
+		},
+		"Platform" : 
+		{
+			"type": "object",
+			"description" : "Platform",
+			"properties":
+			{
+			}
+		},
+		"Privacy Requirement" : 
+		{
+			"type": "object",
+			"description" : "Privacy Requirement",
+			"properties":
+			{
+			}
+		},
+		"Profile" : 
+		{
+			"type": "object",
+			"description" : "Profile",
+			"properties":
+			{
+			}
+		},
+		"Provider" : 
+		{
+			"type": "object",
+			"description" : "Provider",
+			"properties":
+			{
+			}
+		},
+		"Public Transport" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Push Notification" : 
+		{
+			"type": "object",
+			"description" : "Push Notification",
+			"properties":
+			{
+			}
+		},
+		"Push Updates" : 
+		{
+			"type": "object",
+			"description" : "Push Updates",
+			"properties":
+			{
+			}
+		},
+		"Push message" : 
+		{
+			"type": "object",
+			"description" : "Push message",
+			"properties":
+			{
+			}
+		},
+		"Receipt" : 
+		{
+			"type": "object",
+			"description" : "Receipt",
+			"properties":
+			{
+			}
+		},
+		"Reecommended Service" : 
+		{
+			"type": "object",
+			"description" : "Reecommended Service",
+			"properties":
+			{
+			}
+		},
+		"Refund" : 
+		{
+			"type": "object",
+			"description" : "Refund",
+			"properties":
+			{
+			}
+		},
+		"Regulation" : 
+		{
+			"type": "object",
+			"description" : "Regulation",
+			"properties":
+			{
+			}
+		},
+		"Relevance" : 
+		{
+			"type": "object",
+			"description" : "Relevance",
+			"properties":
+			{
+			}
+		},
+		"Requestor" : 
+		{
+			"type": "object",
+			"description" : "Requestor",
+			"properties":
+			{
+			}
+		},
+		"Restaurant" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Restricted/prohibited item" : 
+		{
+			"type": "object",
+			"description" : "Restricted/prohibited item",
+			"properties":
+			{
+			}
+		},
+		"Result" : 
+		{
+			"type": "object",
+			"description" : "Result",
+			"properties":
+			{
+			}
+		},
+		"Result Items" : 
+		{
+			"type": "object",
+			"description" : "Result Items",
+			"properties":
+			{
+			}
+		},
+		"Result List" : 
+		{
+			"type": "object",
+			"description" : "Result List",
+			"properties":
+			{
+			}
+		},
+		"Retail" : 
+		{
+			"type": "object",
+			"description" : "Retail",
+			"properties":
+			{
+			}
+		},
+		"Retail Item" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Route" : 
+		{
+			"type": "object",
+			"description" : "Route",
+			"properties":
+			{
+			}
+		},
+		"Scheduled Flight" : 
+		{
+			"type": "object",
+			"description" : "Scheduled Flight",
+			"properties":
+			{
+			}
+		},
+		"Scheduled Time" : 
+		{
+			"type": "object",
+			"description" : "Scheduled Time",
+			"properties":
+			{
+			}
+		},
+		"Screen" : 
+		{
+			"type": "object",
+			"description" : "Screen",
+			"properties":
+			{
+			}
+		},
+		"Screening Authority" : 
+		{
+			"type": "object",
+			"description" : "Screening Authority",
+			"properties":
+			{
+			}
+		},
+		"Seamless Travel" : 
+		{
+			"type": "object",
+			"description" : "Seamless Travel",
+			"properties":
+			{
+			}
+		},
+		"Search Bar" : 
+		{
+			"type": "object",
+			"description" : "Search Bar",
+			"properties":
+			{
+			}
+		},
+		"Seat Maps" : 
+		{
+			"type": "object",
+			"description" : "Seat Maps",
+			"properties":
+			{
+			}
+		},
+		"Security Clearance" : 
+		{
+			"type": "object",
+			"description" : "Security Clearance",
+			"properties":
+			{
+			}
+		},
+		"Security Fast Track" : 
+		{
+			"type": "object",
+			"description" : "Security Fast Track",
+			"properties":
+			{
+			}
+		},
+		"Security Screening Regulation" : 
+		{
+			"type": "object",
+			"description" : "Security Screening Regulation",
+			"properties":
+			{
+			}
+		},
+		"Security Waiting Time" : 
+		{
+			"type": "object",
+			"description" : "Security Waiting Time",
+			"properties":
+			{
+			}
+		},
+		"Security and Screening Regulation" : 
+		{
+			"type": "object",
+			"description" : "Security and Screening Regulation",
+			"properties":
+			{
+			}
+		},
+		"Selected Airport" : 
+		{
+			"type": "object",
+			"description" : "Selected Airport",
+			"properties":
+			{
+			}
+		},
+		"Selection Items" : 
+		{
+			"type": "object",
+			"description" : "Selection Items",
+			"properties":
+			{
+			}
+		},
+		"Service" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Service Desk" : 
+		{
+			"type": "object",
+			"description" : "Service Desk",
+			"properties":
+			{
+			}
+		},
+		"Service Field" : 
+		{
+			"type": "object",
+			"description" : "Service Field",
+			"properties":
+			{
+			}
+		},
+		"Service Fields" : 
+		{
+			"type": "object",
+			"description" : "Service Fields",
+			"properties":
+			{
+			}
+		},
+		"Service Information" : 
+		{
+			"type": "object",
+			"description" : "Service Information",
+			"properties":
+			{
+			}
+		},
+		"Service List" : 
+		{
+			"type": "object",
+			"description" : "Service List",
+			"properties":
+			{
+			}
+		},
+		"Service Provider" : 
+		{
+			"type": "object",
+			"description" : "Service Provider",
+			"properties":
+			{
+			}
+		},
+		"Service Provider's Goal" : 
+		{
+			"type": "object",
+			"description" : "Service Provider's Goal",
+			"properties":
+			{
+			}
+		},
+		"Service Provider/Airport/Airline" : 
+		{
+			"type": "object",
+			"description" : "Service Provider/Airport/Airline",
+			"properties":
+			{
+			}
+		},
+		"Service Reservation" : 
+		{
+			"type": "object",
+			"description" : "Service Reservation",
+			"properties":
+			{
+			}
+		},
+		"Service phone number" : 
+		{
+			"type": "object",
+			"description" : "Service phone number",
+			"properties":
+			{
+			}
+		},
+		"Services" : 
+		{
+			"type": "object",
+			"description" : "Services",
+			"properties":
+			{
+			}
+		},
+		"Share Aircrafts (Type) in Use" : 
+		{
+			"type": "object",
+			"description" : "Share Aircrafts (Type) in Use",
+			"properties":
+			{
+			}
+		},
+		"Share Flight Information" : 
+		{
+			"type": "object",
+			"description" : "Share Flight Information",
+			"properties":
+			{
+			}
+		},
+		"Share Information with Partner" : 
+		{
+			"type": "object",
+			"description" : "Share Information with Partner",
+			"properties":
+			{
+			}
+		},
+		"Share Specific Airline Information" : 
+		{
+			"type": "object",
+			"description" : "Share Specific Airline Information",
+			"properties":
+			{
+			}
+		},
+		"Share passenger numbers" : 
+		{
+			"type": "object",
+			"description" : "Share passenger numbers",
+			"properties":
+			{
+			}
+		},
+		"Shop" : 
+		{
+			"type": "object",
+			"description" : "Shop",
+			"properties":
+			{
+			}
+		},
+		"Short Description" : 
+		{
+			"type": "object",
+			"description" : "Short Description",
+			"properties":
+			{
+			}
+		},
+		"Show Airline Information" : 
+		{
+			"type": "object",
+			"description" : "Show Airline Information",
+			"properties":
+			{
+			}
+		},
+		"Show Flight Overview" : 
+		{
+			"type": "object",
+			"description" : "Show Flight Overview",
+			"properties":
+			{
+			}
+		},
+		"Show Route from A to B" : 
+		{
+			"type": "object",
+			"description" : "Show Route from A to B",
+			"properties":
+			{
+			}
+		},
+		"Show Trip Information" : 
+		{
+			"type": "object",
+			"description" : "Show Trip Information",
+			"properties":
+			{
+			}
+		},
+		"Show User Location on Map" : 
+		{
+			"type": "object",
+			"description" : "Show User Location on Map",
+			"properties":
+			{
+			}
+		},
+		"Sign up Form" : 
+		{
+			"type": "object",
+			"description" : "Sign up Form",
+			"properties":
+			{
+			}
+		},
+		"Single Search Field" : 
+		{
+			"type": "object",
+			"description" : "Single Search Field",
+			"properties":
+			{
+			}
+		},
+		"Site" : 
+		{
+			"type": "object",
+			"description" : "Site",
+			"properties":
+			{
+			}
+		},
+		"Special Needs (e.g. PRM)" : 
+		{
+			"type": "object",
+			"description" : "Special Needs (e.g. PRM)",
+			"properties":
+			{
+			}
+		},
+		"Special offer" : 
+		{
+			"type": "object",
+			"description" : "Special offer",
+			"properties":
+			{
+			}
+		},
+		"Specific Airport" : 
+		{
+			"type": "object",
+			"description" : "Specific Airport",
+			"properties":
+			{
+			}
+		},
+		"Specific Service" : 
+		{
+			"type": "object",
+			"description" : "Specific Service",
+			"properties":
+			{
+			}
+		},
+		"Starbucks" : 
+		{
+			"type": "object",
+			"description" : "Starbucks",
+			"properties":
+			{
+			}
+		},
+		"State" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Status" : 
+		{
+			"type": "object",
+			"description" : "Status",
+			"properties":
+			{
+			}
+		},
+		"Summmary" : 
+		{
+			"type": "object",
+			"description" : "Summmary",
+			"properties":
+			{
+			}
+		},
+		"Supply Lost & Found Details" : 
+		{
+			"type": "object",
+			"description" : "Supply Lost & Found Details",
+			"properties":
+			{
+			}
+		},
+		"Surface Movement" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Surroundings" : 
+		{
+			"type": "object",
+			"description" : "Surroundings",
+			"properties":
+			{
+			}
+		},
+		"System" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Table Element" : 
+		{
+			"type": "object",
+			"description" : "Table Element",
+			"properties":
+			{
+			}
+		},
+		"Terminal Process" : 
+		{
+			"type": "object",
+			"description" : "Terminal Process",
+			"properties":
+			{
+			}
+		},
+		"Text Element" : 
+		{
+			"type": "object",
+			"description" : "Text Element",
+			"properties":
+			{
+			}
+		},
+		"Text Fields" : 
+		{
+			"type": "object",
+			"description" : "Text Fields",
+			"properties":
+			{
+			}
+		},
+		"Time" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Time Period" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Title" : 
+		{
+			"type": "object",
+			"description" : "Title",
+			"properties":
+			{
+			}
+		},
+		"Tourist Information" : 
+		{
+			"type": "object",
+			"description" : "Tourist Information",
+			"properties":
+			{
+			}
+		},
+		"Transit" : 
+		{
+			"type": "object",
+			"description" : "Transit",
+			"properties":
+			{
+			}
+		},
+		"Transport" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Transport" : 
+		{
+			"type": "object",
+			"description" : "Transport",
+			"properties":
+			{
+			}
+		},
+		"Travel Information" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Travel Option" : 
+		{
+			"type": "object",
+			"description" : "Travel Option",
+			"properties":
+			{
+			}
+		},
+		"Traveller" : 
+		{
+			"type": "object",
+			"description" : "Traveller",
+			"properties":
+			{
+			}
+		},
+		"Trip Details View" : 
+		{
+			"type": "object",
+			"description" : "Trip Details View",
+			"properties":
+			{
+			}
+		},
+		"Trip Information" : 
+		{
+			"type": "object",
+			"description" : "Trip Information",
+			"properties":
+			{
+			}
+		},
+		"Trip Overview" : 
+		{
+			"type": "object",
+			"description" : "Trip Overview",
+			"properties":
+			{
+			}
+		},
+		"Trip Status" : 
+		{
+			"type": "object",
+			"description" : "Trip Status",
+			"properties":
+			{
+			}
+		},
+		"Trip-Wrapper" : 
+		{
+			"type": "object",
+			"description" : "Trip-Wrapper",
+			"properties":
+			{
+			}
+		},
+		"Trusted Provider" : 
+		{
+			"type": "object",
+			"description" : "Trusted Provider",
+			"properties":
+			{
+			}
+		},
+		"Two Points" : 
+		{
+			"type": "object",
+			"description" : "Two Points",
+			"properties":
+			{
+			}
+		},
+		"Types" : 
+		{
+			"type": "object",
+			"description" : "Types",
+			"properties":
+			{
+			}
+		},
+		"Unique ID" : 
+		{
+			"type": "object",
+			"description" : "Unique ID",
+			"properties":
+			{
+			}
+		},
+		"Unique Identifier" : 
+		{
+			"type": "object",
+			"description" : "Unique Identifier",
+			"properties":
+			{
+			}
+		},
+		"Use-Case" : 
+		{
+			"type": "object",
+			"description" : "Use-Case",
+			"properties":
+			{
+			}
+		},
+		"User" : 
+		{
+			"type": "object",
+			"description" : "User",
+			"properties":
+			{
+			}
+		},
+		"User Account" : 
+		{
+			"type": "object",
+			"description" : "User Account",
+			"properties":
+			{
+			}
+		},
+		"User Profile" : 
+		{
+			"type": "object",
+			"description" : "User Profile",
+			"properties":
+			{
+			}
+		},
+		"Username" : 
+		{
+			"type": "object",
+			"description" : "Username",
+			"properties":
+			{
+			}
+		},
+		"Users Data" : 
+		{
+			"type": "object",
+			"description" : "Users Data",
+			"properties":
+			{
+			}
+		},
+		"Vacation" : 
+		{
+			"type": "object",
+			"description" : "Vacation",
+			"properties":
+			{
+			}
+		},
+		"Vehicle" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Visa & Passport Requirement" : 
+		{
+			"type": "object",
+			"description" : "Visa & Passport Requirement",
+			"properties":
+			{
+			}
+		},
+		"Voucher" : 
+		{
+			"type": "object",
+			"description" : "Voucher",
+			"properties":
+			{
+			}
+		},
+		"Warning" : 
+		{
+			"type": "object",
+			"description" : "Warning",
+			"properties":
+			{
+			}
+		},
+		"Wayfinding" : 
+		{
+			"type": "object",
+			"description" : "Wayfinding",
+			"properties":
+			{
+			}
+		},
+		"Weather" : 
+		{
+			"type": "object",
+			"properties":
+			{
+			}
+		},
+		"Weather Information" : 
+		{
+			"type": "object",
+			"description" : "Weather Information",
+			"properties":
+			{
+			}
+		},
+		"Website" : 
+		{
+			"type": "object",
+			"description" : "Website",
+			"properties":
+			{
+			}
+		}
+	}
+}
