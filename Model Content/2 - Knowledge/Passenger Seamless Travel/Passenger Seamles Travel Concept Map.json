@@ -9,29 +9,29 @@
         {
           "association": "books",
           "term": "Airport Aervice",
-          "concept": "Offering",
+          "concept": "Offering"
         },
         {
           "association": "creates",
           "term": "Service Bookmark",
-          "concept": "Information Content",
-        }
+          "concept": "Information Content"
+        },
         {
           "association": "provides",
           "term": "Traveller Credentials",
-          "concept": "Information Content",
+          "concept": "Information Content"
         }
-      ],
-    }
+      ]
+    },
     "Aircraft Movement" :
     {
-      "concept": "Movement"
+      "concept": "Movement",
       "relations": 
       [
         {
           "association": "is operated by",
           "term": "Aircraft Operator",
-          "concept": "Party",
+          "concept": "Party"
         }
       ]
     }
