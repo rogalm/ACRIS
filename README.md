@@ -1,4 +1,4 @@
-![ACRIS](images/ACRISLogo.JPG)
+![ACRIS](https://github.com/rogalm/ACRIS/blob/main/Images/ACRISLogo.JPG)
 
 # ACI ACRIS Semantic Model (ASM)
 
