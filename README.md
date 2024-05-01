@@ -1,3 +1,5 @@
+![ACRIS](images/ACRISLogo.JPG)
+
 # ACI ACRIS Semantic Model (ASM)
 
 The ACRIS Semantic Model contains the data model for several airport and aviation specific domains.
