@@ -1,6 +1,10 @@
-# Passenger Seamless Travel Technical Realilsation
+# Passenger Seamless Travel Language Layer
 Export from ACRIS Semantic Model from Enterprise Architect. <br>
-# Passenger Seamless Travel
+
+## HTML representation
+https://htmlpreview.github.io/?https://github.com/rogalm/ACRIS/blob/main/Model%20Content/1%20-%20Language/Passenger%20Seamless%20Travel/html/index.htm
+
+## Passenger Seamless Travel terms
 | Term                | Version     | Description  |
 | ------------------- | ----------- | ------------ |
 | ` Account` | 2.6.0 | A passenger account is a formal contractual relationship established to provide for regular business services |
