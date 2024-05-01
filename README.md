@@ -25,7 +25,12 @@ This folder contains an xml export of the package.
 
 ## How to contribute
 
-tbd
+**!!! First proposal to be discussed in the ACRIS WG !!!**
+
+* The modelling is done in Enterprise Architect by some experts (-> ACRIS roles)
+* A representation of the model is available on GitHub 
+* ACRIS projects, airports or any other party can create an own branch to work with.
+* Chages are handled with pull requests
 
 ### ACRIS initiatives and projects
 
@@ -33,7 +38,14 @@ tbd
 
 ### The branching concept
 
-tbd
+![ASM Branching Concept](https://github.com/rogalm/ACRIS/blob/main/Images/Branching-Concept.JPG)
+
+| Branch | Description | Permissions |
+| ------ | ----------- | ----------- |
+| main | The main branch alwas holds the published releases of the ASM. Published releases are tagged with a release number like 'ASM Release 2.1' | ASM Manager |
+| EA_Model | The EA_Model branch holds changes which are exported from the EA model. | ASM Manager |
+| Pre_Release_x_y | After publishing a new release of the ASM, a new pre release branch with the future ASM version number is generated as base for upcomming changes. | Public |
+| Work branches | Like 'MUC' or 'SFO' in the example image are branches for ACRIS projects, Airports or any other company. This branches are used for to make extensions or changes to the model.  | Public |
 
 ### ASM Change Process
 
