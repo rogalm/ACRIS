@@ -1,7 +1,7 @@
 # Passenger Seamless Travel Technical Realilsation
 Export from ACRIS Semantic Model from Enterprise Architect. <br>
 
-## HTML representation
+## HTML representation of Use Cases
 https://htmlpreview.github.io/?https://github.com/rogalm/ACRIS/blob/main/Model%20Content/4%20-%20Technical%20Realisation/Passenger%20Seamless%20Travel/html/index.htm
 
 
