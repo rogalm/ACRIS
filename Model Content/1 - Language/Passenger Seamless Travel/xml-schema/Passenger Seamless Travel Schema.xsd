@@ -1,0 +1,1171 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:m="http://iec.ch/TC57/Passenger Seamless Travel Schema#" targetNamespace="http://iec.ch/TC57/Passenger Seamless Travel Schema#" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="ATM" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#ATM">
+		<xs:annotation>
+			<xs:documentation>In</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Account" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Account">
+		<xs:annotation>
+			<xs:documentation>A passenger account is a formal contractual relationship established to provide for regular business services</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Action" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Action"/>
+	<xs:complexType name="Advertisement" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Advertisement">
+		<xs:annotation>
+			<xs:documentation>Advertisement</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Agent" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Agent">
+		<xs:annotation>
+			<xs:documentation>Agent</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Aircraft" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Aircraft"/>
+	<xs:complexType name="Aircraft Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Aircraft Information"/>
+	<xs:complexType name="Aircraft Movement" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Aircraft Movement"/>
+	<xs:complexType name="Airline" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Airline">
+		<xs:annotation>
+			<xs:documentation>Airline</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Airline Ground Handling Agent" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Airline Ground Handling Agent">
+		<xs:annotation>
+			<xs:documentation>Airline or Ground handling agent</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Airline Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Airline Information"/>
+	<xs:complexType name="Airline Operator" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Airline Operator">
+		<xs:annotation>
+			<xs:documentation>Airline Operator</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Airport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Airport">
+		<xs:annotation>
+			<xs:documentation>Airport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Airport Map" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Airport Map">
+		<xs:annotation>
+			<xs:documentation>Airport Map</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Airport Service" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Airport Service">
+		<xs:annotation>
+			<xs:documentation>Airport Service</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Airspace Movement" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Airspace Movement"/>
+	<xs:complexType name="Application" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Application">
+		<xs:annotation>
+			<xs:documentation>Application</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Arrival" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Arrival">
+		<xs:annotation>
+			<xs:documentation>Arrival</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Arrival Gate" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Arrival Gate">
+		<xs:annotation>
+			<xs:documentation>Arrival Gate</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Arrival Time" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Arrival Time">
+		<xs:annotation>
+			<xs:documentation>Arrival Time</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Automated border control" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Automated border control">
+		<xs:annotation>
+			<xs:documentation>Automated border control</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Baggage Claim" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Baggage Claim">
+		<xs:annotation>
+			<xs:documentation>Baggage Claim</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Baggage Handler" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Baggage Handler">
+		<xs:annotation>
+			<xs:documentation>Baggage handler</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Baggage Reclaim" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Baggage Reclaim">
+		<xs:annotation>
+			<xs:documentation>Baggage Reclaim</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Baggage Status" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Baggage Status">
+		<xs:annotation>
+			<xs:documentation>Baggage-status</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Booked Service" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Booked Service">
+		<xs:annotation>
+			<xs:documentation>Booked Service</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Booking Agent" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Booking Agent">
+		<xs:annotation>
+			<xs:documentation>Booking Agent</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Booking Number" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Booking Number">
+		<xs:annotation>
+			<xs:documentation>Booking Number</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Booking Process" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Booking Process">
+		<xs:annotation>
+			<xs:documentation>Booking Process</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Booking Status" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Booking Status">
+		<xs:annotation>
+			<xs:documentation>Booking-status</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Business" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Business">
+		<xs:annotation>
+			<xs:documentation>Business</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Cancellation" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Cancellation">
+		<xs:annotation>
+			<xs:documentation>Cancellation</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Car" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Car"/>
+	<xs:complexType name="Catalogue of Services" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Catalogue of Services">
+		<xs:annotation>
+			<xs:documentation>Catalogue of Services</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Category (restaurant, shop)" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Category (restaurant, shop)">
+		<xs:annotation>
+			<xs:documentation>Category (restaurant, shop)</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Check In Desk Location" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Check In Desk Location">
+		<xs:annotation>
+			<xs:documentation>Check In Desk Location</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Checked-in baggage" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Checked-in baggage">
+		<xs:annotation>
+			<xs:documentation>Checked-in baggage</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Confirmation" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Confirmation">
+		<xs:annotation>
+			<xs:documentation>Confirmation</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Contact" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Contact">
+		<xs:annotation>
+			<xs:documentation>Contact</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Coupons" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Coupons">
+		<xs:annotation>
+			<xs:documentation>Coupons</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Credential" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Credential">
+		<xs:annotation>
+			<xs:documentation>Credential</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Data" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Data">
+		<xs:annotation>
+			<xs:documentation>Data</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Data Privacy" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Data Privacy">
+		<xs:annotation>
+			<xs:documentation>Data Privacy</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Data Providing Partner" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Data Providing Partner">
+		<xs:annotation>
+			<xs:documentation>Data Providing Partner</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Database" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Database">
+		<xs:annotation>
+			<xs:documentation>Database</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Date" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Date">
+		<xs:annotation>
+			<xs:documentation>Date</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Default Airport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Default Airport">
+		<xs:annotation>
+			<xs:documentation>Default Airport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Default or Current Airport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Default or Current Airport">
+		<xs:annotation>
+			<xs:documentation>Default or current airport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Delay" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Delay">
+		<xs:annotation>
+			<xs:documentation>Delay</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Delivery Address" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Delivery Address">
+		<xs:annotation>
+			<xs:documentation>Delivery Address</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Departure" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Departure">
+		<xs:annotation>
+			<xs:documentation>Departure</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Departure Gate" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Departure Gate">
+		<xs:annotation>
+			<xs:documentation>Departure Gate</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Departure Time" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Departure Time">
+		<xs:annotation>
+			<xs:documentation>Departure Time</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Description" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Description">
+		<xs:annotation>
+			<xs:documentation>Description</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Destination" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Destination">
+		<xs:annotation>
+			<xs:documentation>Destination</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Destination Airport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Destination Airport">
+		<xs:annotation>
+			<xs:documentation>Destination Airport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Detail" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Detail">
+		<xs:annotation>
+			<xs:documentation>Detail</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Dynamic Pricing" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Dynamic Pricing">
+		<xs:annotation>
+			<xs:documentation>Dynamic Pricing</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Economy" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Economy">
+		<xs:annotation>
+			<xs:documentation>Economy</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Elevators" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Elevators">
+		<xs:annotation>
+			<xs:documentation>Elevators</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Eligibility" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Eligibility">
+		<xs:annotation>
+			<xs:documentation>Eligibility</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Email" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Email">
+		<xs:annotation>
+			<xs:documentation>Email</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Email Address" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Email Address">
+		<xs:annotation>
+			<xs:documentation>Email address</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="End User" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#End User">
+		<xs:annotation>
+			<xs:documentation>End User</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Entry" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Entry">
+		<xs:annotation>
+			<xs:documentation>Entry</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Facility" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Facility">
+		<xs:annotation>
+			<xs:documentation>Facility</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Faster Access" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Faster Access">
+		<xs:annotation>
+			<xs:documentation>Faster Access</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Filter" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Filter">
+		<xs:annotation>
+			<xs:documentation>Filter</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Filterable List" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Filterable List">
+		<xs:annotation>
+			<xs:documentation>Filterable List</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Fleet" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Fleet">
+		<xs:annotation>
+			<xs:documentation>Fleet</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Flexibility" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Flexibility">
+		<xs:annotation>
+			<xs:documentation>Flexibility</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Flight" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Flight">
+		<xs:annotation>
+			<xs:documentation>Flight</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Flight Delay" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Flight Delay">
+		<xs:annotation>
+			<xs:documentation>Flight Delay</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Flight Number" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Flight Number">
+		<xs:annotation>
+			<xs:documentation>Flight Number</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Flight Plan" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Flight Plan">
+		<xs:annotation>
+			<xs:documentation>Flight Plan</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Flight Service" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Flight Service">
+		<xs:annotation>
+			<xs:documentation>Flight Service</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Flight Status" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Flight Status"/>
+	<xs:complexType name="Form" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Form">
+		<xs:annotation>
+			<xs:documentation>Form</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Gate" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Gate">
+		<xs:annotation>
+			<xs:documentation>Gate</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Gate Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Gate Information">
+		<xs:annotation>
+			<xs:documentation>Gate Info</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Gate Number" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Gate Number">
+		<xs:annotation>
+			<xs:documentation>Gate Number</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Global Airline Info" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Global Airline Info">
+		<xs:annotation>
+			<xs:documentation>Global Airline Info</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Good" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Good"/>
+	<xs:complexType name="Government" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Government">
+		<xs:annotation>
+			<xs:documentation>Government</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Ground Handler" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Ground Handler">
+		<xs:annotation>
+			<xs:documentation>Ground Handler</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Ground Transportation" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Ground Transportation">
+		<xs:annotation>
+			<xs:documentation>Ground Transportation</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Guest" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Guest">
+		<xs:annotation>
+			<xs:documentation>Guest</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Heathrow Airport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Heathrow Airport">
+		<xs:annotation>
+			<xs:documentation>Heathrow Airport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Home Airport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Home Airport">
+		<xs:annotation>
+			<xs:documentation>Home Airport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Hotel accomodation" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Hotel accomodation">
+		<xs:annotation>
+			<xs:documentation>Hotel accomodation</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Identity Provider" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Identity Provider">
+		<xs:annotation>
+			<xs:documentation>Identity Provider</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Information">
+		<xs:annotation>
+			<xs:documentation>Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Information Content" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Information Content"/>
+	<xs:complexType name="Input Field" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Input Field">
+		<xs:annotation>
+			<xs:documentation>Input Field</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Item" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Item"/>
+	<xs:complexType name="Lavatory" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Lavatory">
+		<xs:annotation>
+			<xs:documentation>Lavatory</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Length (number of items)" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Length (number of items)">
+		<xs:annotation>
+			<xs:documentation>Length (number of items)</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="List" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#List">
+		<xs:annotation>
+			<xs:documentation>List</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="List Element" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#List Element">
+		<xs:annotation>
+			<xs:documentation>List Element</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Local Airline Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Local Airline Information">
+		<xs:annotation>
+			<xs:documentation>Local Airline Info</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Local Availability" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Local Availability">
+		<xs:annotation>
+			<xs:documentation>Local Availability</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Local Info Phone Number" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Local Info Phone Number">
+		<xs:annotation>
+			<xs:documentation>Local Info Phone Number</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Local Weather" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Local Weather">
+		<xs:annotation>
+			<xs:documentation>Local Weather</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Local or external Service Providers" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Local or external Service Providers">
+		<xs:annotation>
+			<xs:documentation>Local or external Service Providers</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Location" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Location">
+		<xs:annotation>
+			<xs:documentation>Location</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Lost &amp; Found Counter" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Lost &amp; Found Counter">
+		<xs:annotation>
+			<xs:documentation>Lost &amp; Found Counter</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Lost &amp; Found Procedure" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Lost &amp; Found Procedure">
+		<xs:annotation>
+			<xs:documentation>Lost &amp; Found Procedure</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Lost Baggage" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Lost Baggage">
+		<xs:annotation>
+			<xs:documentation>Lost Baggage</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Map" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Map">
+		<xs:annotation>
+			<xs:documentation>Map</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Matching Service" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Matching Service">
+		<xs:annotation>
+			<xs:documentation>Matching Service</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Menu Item" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Menu Item">
+		<xs:annotation>
+			<xs:documentation>Menu Item</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Missing Field" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Missing Field">
+		<xs:annotation>
+			<xs:documentation>Missing Field</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Movement" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Movement"/>
+	<xs:complexType name="Name" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Name">
+		<xs:annotation>
+			<xs:documentation>Name</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Off-airport bag drop" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Off-airport bag drop">
+		<xs:annotation>
+			<xs:documentation>Off-airport bag drop</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Offered Service" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Offered Service">
+		<xs:annotation>
+			<xs:documentation>Offered Service</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Offering" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Offering"/>
+	<xs:complexType name="Offset" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Offset">
+		<xs:annotation>
+			<xs:documentation>Offset (position of the first item to be transferred)</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Onward Travel Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Onward Travel Information">
+		<xs:annotation>
+			<xs:documentation>Onward Travel Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Open Booking" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Open Booking">
+		<xs:annotation>
+			<xs:documentation>Open Booking</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Opening Hours" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Opening Hours">
+		<xs:annotation>
+			<xs:documentation>Opening Hours</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Operated Flight" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Operated Flight">
+		<xs:annotation>
+			<xs:documentation>Operated Flight</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Optimal Travel Time" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Optimal Travel Time">
+		<xs:annotation>
+			<xs:documentation>Optimal Travel Time</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Optional Payment" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Optional Payment">
+		<xs:annotation>
+			<xs:documentation>Optional Payment</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Origin" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Origin">
+		<xs:annotation>
+			<xs:documentation>Origin</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Origin Airport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Origin Airport">
+		<xs:annotation>
+			<xs:documentation>Origin Airport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="PAX" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#PAX">
+		<xs:annotation>
+			<xs:documentation>PAX</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="POI Search" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#POI Search">
+		<xs:annotation>
+			<xs:documentation>POI Search</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="PRM Option" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#PRM Option">
+		<xs:annotation>
+			<xs:documentation>PRM Option</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Parking" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Parking">
+		<xs:annotation>
+			<xs:documentation>Parking</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Partner" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Partner">
+		<xs:annotation>
+			<xs:documentation>Partner</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Party Role" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Party Role"/>
+	<xs:complexType name="Passenger" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Passenger">
+		<xs:annotation>
+			<xs:documentation>Passenger</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Passenger Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Passenger Information">
+		<xs:annotation>
+			<xs:documentation>Pax Info</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Passenger Itinerary" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Passenger Itinerary">
+		<xs:annotation>
+			<xs:documentation>Passenger Itinery</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Passenger Movement" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Passenger Movement"/>
+	<xs:complexType name="Passenger Tracking" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Passenger Tracking">
+		<xs:annotation>
+			<xs:documentation>Passenger Tracking</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Password" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Password">
+		<xs:annotation>
+			<xs:documentation>Password</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Password Policy" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Password Policy">
+		<xs:annotation>
+			<xs:documentation>Password Policy</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Payment Provider" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Payment Provider">
+		<xs:annotation>
+			<xs:documentation>Payment Provider</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Personal Preference" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Personal Preference">
+		<xs:annotation>
+			<xs:documentation>Personal Preference</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Phone number" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Phone number">
+		<xs:annotation>
+			<xs:documentation>Phone number</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Platform" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Platform">
+		<xs:annotation>
+			<xs:documentation>Platform</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Privacy Requirement" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Privacy Requirement">
+		<xs:annotation>
+			<xs:documentation>Privacy Requirement</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Profile" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Profile">
+		<xs:annotation>
+			<xs:documentation>Profile</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Provider" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Provider">
+		<xs:annotation>
+			<xs:documentation>Provider</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Public Transport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Public Transport"/>
+	<xs:complexType name="Push Notification" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Push Notification">
+		<xs:annotation>
+			<xs:documentation>Push Notification</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Push Updates" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Push Updates">
+		<xs:annotation>
+			<xs:documentation>Push Updates</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Push message" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Push message">
+		<xs:annotation>
+			<xs:documentation>Push message</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Receipt" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Receipt">
+		<xs:annotation>
+			<xs:documentation>Receipt</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Reecommended Service" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Reecommended Service">
+		<xs:annotation>
+			<xs:documentation>Reecommended Service</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Refund" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Refund">
+		<xs:annotation>
+			<xs:documentation>Refund</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Regulation" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Regulation">
+		<xs:annotation>
+			<xs:documentation>Regulation</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Relevance" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Relevance">
+		<xs:annotation>
+			<xs:documentation>Relevance</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Requestor" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Requestor">
+		<xs:annotation>
+			<xs:documentation>Requestor</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Restaurant" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Restaurant"/>
+	<xs:complexType name="Restricted/prohibited item" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Restricted/prohibited item">
+		<xs:annotation>
+			<xs:documentation>Restricted/prohibited item</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Result" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Result">
+		<xs:annotation>
+			<xs:documentation>Result</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Result Items" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Result Items">
+		<xs:annotation>
+			<xs:documentation>Result Items</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Result List" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Result List">
+		<xs:annotation>
+			<xs:documentation>Result List</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Retail" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Retail">
+		<xs:annotation>
+			<xs:documentation>Retail</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Retail Item" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Retail Item"/>
+	<xs:complexType name="Route" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Route">
+		<xs:annotation>
+			<xs:documentation>Route</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Scheduled Flight" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Scheduled Flight">
+		<xs:annotation>
+			<xs:documentation>Scheduled Flight</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Scheduled Time" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Scheduled Time">
+		<xs:annotation>
+			<xs:documentation>Scheduled Time</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Screen" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Screen">
+		<xs:annotation>
+			<xs:documentation>Screen</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Screening Authority" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Screening Authority">
+		<xs:annotation>
+			<xs:documentation>Screening Authority</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Seamless Travel" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Seamless Travel">
+		<xs:annotation>
+			<xs:documentation>Seamless Travel</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Search Bar" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Search Bar">
+		<xs:annotation>
+			<xs:documentation>Search Bar</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Seat Maps" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Seat Maps">
+		<xs:annotation>
+			<xs:documentation>Seat Maps</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Security Clearance" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Security Clearance">
+		<xs:annotation>
+			<xs:documentation>Security Clearance</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Security Fast Track" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Security Fast Track">
+		<xs:annotation>
+			<xs:documentation>Security Fast Track</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Security Screening Regulation" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Security Screening Regulation">
+		<xs:annotation>
+			<xs:documentation>Security Screening Regulation</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Security Waiting Time" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Security Waiting Time">
+		<xs:annotation>
+			<xs:documentation>Security Waiting Time</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Security and Screening Regulation" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Security and Screening Regulation">
+		<xs:annotation>
+			<xs:documentation>Security and Screening Regulation</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Selected Airport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Selected Airport">
+		<xs:annotation>
+			<xs:documentation>Selected Airport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Selection Items" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Selection Items">
+		<xs:annotation>
+			<xs:documentation>Selection Items</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service"/>
+	<xs:complexType name="Service Desk" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service Desk">
+		<xs:annotation>
+			<xs:documentation>Service Desk</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service Field" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service Field">
+		<xs:annotation>
+			<xs:documentation>Service Field</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service Fields" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service Fields">
+		<xs:annotation>
+			<xs:documentation>Service Fields</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service Information">
+		<xs:annotation>
+			<xs:documentation>Service Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service List" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service List">
+		<xs:annotation>
+			<xs:documentation>Service List</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service Provider" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service Provider">
+		<xs:annotation>
+			<xs:documentation>Service Provider</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service Provider's Goal" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service Provider's Goal">
+		<xs:annotation>
+			<xs:documentation>Service Provider's Goal</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service Provider/Airport/Airline" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service Provider/Airport/Airline">
+		<xs:annotation>
+			<xs:documentation>Service Provider/Airport/Airline</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service Reservation" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service Reservation">
+		<xs:annotation>
+			<xs:documentation>Service Reservation</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Service phone number" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Service phone number">
+		<xs:annotation>
+			<xs:documentation>Service phone number</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Services" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Services">
+		<xs:annotation>
+			<xs:documentation>Services</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Share Aircrafts (Type) in Use" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Share Aircrafts (Type) in Use">
+		<xs:annotation>
+			<xs:documentation>Share Aircrafts (Type) in Use</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Share Flight Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Share Flight Information">
+		<xs:annotation>
+			<xs:documentation>Share Flight Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Share Information with Partner" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Share Information with Partner">
+		<xs:annotation>
+			<xs:documentation>Share Information with Partner</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Share Specific Airline Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Share Specific Airline Information">
+		<xs:annotation>
+			<xs:documentation>Share Specific Airline Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Share passenger numbers" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Share passenger numbers">
+		<xs:annotation>
+			<xs:documentation>Share passenger numbers</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Shop" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Shop">
+		<xs:annotation>
+			<xs:documentation>Shop</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Short Description" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Short Description">
+		<xs:annotation>
+			<xs:documentation>Short Description</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Show Airline Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Show Airline Information">
+		<xs:annotation>
+			<xs:documentation>Show Airline Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Show Flight Overview" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Show Flight Overview">
+		<xs:annotation>
+			<xs:documentation>Show Flight Overview</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Show Route from A to B" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Show Route from A to B">
+		<xs:annotation>
+			<xs:documentation>Show Route from A to B</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Show Trip Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Show Trip Information">
+		<xs:annotation>
+			<xs:documentation>Show Trip Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Show User Location on Map" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Show User Location on Map">
+		<xs:annotation>
+			<xs:documentation>Show User Location on Map</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Sign up Form" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Sign up Form">
+		<xs:annotation>
+			<xs:documentation>Sign up Form</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Single Search Field" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Single Search Field">
+		<xs:annotation>
+			<xs:documentation>Single Search Field</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Site" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Site">
+		<xs:annotation>
+			<xs:documentation>Site</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Special Needs (e.g. PRM)" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Special Needs (e.g. PRM)">
+		<xs:annotation>
+			<xs:documentation>Special Needs (e.g. PRM)</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Special offer" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Special offer">
+		<xs:annotation>
+			<xs:documentation>Special offer</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Specific Airport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Specific Airport">
+		<xs:annotation>
+			<xs:documentation>Specific Airport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Specific Service" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Specific Service">
+		<xs:annotation>
+			<xs:documentation>Specific Service</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Starbucks" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Starbucks">
+		<xs:annotation>
+			<xs:documentation>Starbucks</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="State" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#State"/>
+	<xs:complexType name="Status" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Status">
+		<xs:annotation>
+			<xs:documentation>Status</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Summmary" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Summmary">
+		<xs:annotation>
+			<xs:documentation>Summmary</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Supply Lost &amp; Found Details" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Supply Lost &amp; Found Details">
+		<xs:annotation>
+			<xs:documentation>Supply Lost &amp; Found Details</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Surface Movement" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Surface Movement"/>
+	<xs:complexType name="Surroundings" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Surroundings">
+		<xs:annotation>
+			<xs:documentation>Surroundings</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="System" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#System"/>
+	<xs:complexType name="Table Element" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Table Element">
+		<xs:annotation>
+			<xs:documentation>Table Element</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Terminal Process" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Terminal Process">
+		<xs:annotation>
+			<xs:documentation>Terminal Process</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Text Element" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Text Element">
+		<xs:annotation>
+			<xs:documentation>Text Element</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Text Fields" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Text Fields">
+		<xs:annotation>
+			<xs:documentation>Text Fields</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Time" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Time"/>
+	<xs:complexType name="Time Period" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Time Period"/>
+	<xs:complexType name="Title" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Title">
+		<xs:annotation>
+			<xs:documentation>Title</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Tourist Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Tourist Information">
+		<xs:annotation>
+			<xs:documentation>Tourist Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Transit" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Transit">
+		<xs:annotation>
+			<xs:documentation>Transit</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Transport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Transport"/>
+	<xs:complexType name="Transport" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Transport">
+		<xs:annotation>
+			<xs:documentation>Transport</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Travel Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Travel Information"/>
+	<xs:complexType name="Travel Option" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Travel Option">
+		<xs:annotation>
+			<xs:documentation>Travel Option</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Traveller" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Traveller">
+		<xs:annotation>
+			<xs:documentation>Traveller</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Trip Details View" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Trip Details View">
+		<xs:annotation>
+			<xs:documentation>Trip Details View</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Trip Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Trip Information">
+		<xs:annotation>
+			<xs:documentation>Trip Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Trip Overview" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Trip Overview">
+		<xs:annotation>
+			<xs:documentation>Trip Overview</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Trip Status" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Trip Status">
+		<xs:annotation>
+			<xs:documentation>Trip Status</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Trip-Wrapper" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Trip-Wrapper">
+		<xs:annotation>
+			<xs:documentation>Trip-Wrapper</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Trusted Provider" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Trusted Provider">
+		<xs:annotation>
+			<xs:documentation>Trusted Provider</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Two Points" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Two Points">
+		<xs:annotation>
+			<xs:documentation>Two Points</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Types" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Types">
+		<xs:annotation>
+			<xs:documentation>Types</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Unique ID" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Unique ID">
+		<xs:annotation>
+			<xs:documentation>Unique ID</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Unique Identifier" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Unique Identifier">
+		<xs:annotation>
+			<xs:documentation>Unique Identifier</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Use-Case" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Use-Case">
+		<xs:annotation>
+			<xs:documentation>Use-Case</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="User" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#User">
+		<xs:annotation>
+			<xs:documentation>User</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="User Account" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#User Account">
+		<xs:annotation>
+			<xs:documentation>User Account</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="User Profile" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#User Profile">
+		<xs:annotation>
+			<xs:documentation>User Profile</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Username" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Username">
+		<xs:annotation>
+			<xs:documentation>Username</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Users Data" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Users Data">
+		<xs:annotation>
+			<xs:documentation>Users Data</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Vacation" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Vacation">
+		<xs:annotation>
+			<xs:documentation>Vacation</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Vehicle" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Vehicle"/>
+	<xs:complexType name="Visa &amp; Passport Requirement" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Visa &amp; Passport Requirement">
+		<xs:annotation>
+			<xs:documentation>Visa &amp; Passport Requirement</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Voucher" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Voucher">
+		<xs:annotation>
+			<xs:documentation>Voucher</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Warning" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Warning">
+		<xs:annotation>
+			<xs:documentation>Warning</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Wayfinding" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Wayfinding">
+		<xs:annotation>
+			<xs:documentation>Wayfinding</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Weather" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Weather"/>
+	<xs:complexType name="Weather Information" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Weather Information">
+		<xs:annotation>
+			<xs:documentation>Weather Information</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="Website" sawsdl:modelReference="http://iec.ch/TC57/CIM-generic#Website">
+		<xs:annotation>
+			<xs:documentation>Website</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+</xs:schema>
