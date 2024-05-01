@@ -17,6 +17,9 @@ This folder contains a html export of the package in Enterprise Architect
 ### Folder 'json'
 This folder contains the data structure in json format
 
+### Folder #implementation'
+Fliles in this folder can be used for the implementation of the model and interfaces like raml, json, etc.
+
 ### Folder 'EA-xmi'
 This folder contains a EA XMI export of the package which can be used to import into any instance of Enterprise Architect
 
