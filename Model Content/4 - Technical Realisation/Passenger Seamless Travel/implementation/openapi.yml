@@ -1,0 +1,87 @@
+openapi: 3.0.3
+info:
+  title: Seamless Travel - OpenAPI
+  description: |-
+    This is the full API documentation of the ACI ACRIS Seamless Travel domein
+  termsOfService: http://acris.aero
+  contact:
+    email: info@acris.aero
+  license:
+    name: Creative commons
+    url: https://github.com/rogalm/ACRIS/blob/main/LICENSE
+  version: 2.1.1
+tags:
+  - name: Seamless Travel
+    description: Everything about flights
+  - name: flight
+    description: Flight information
+  - name: airline
+    description: Airline information
+  - name: airport
+    description: Airport information
+  - name: bookService
+    description: Service booking information
+  - name: restBase
+    description: Base functions
+  - name: service
+    description: Service information
+  - name: trip
+    description: Trip information
+paths:
+  /flight/flightRequestResource:
+    get:
+      tags:
+        - flight
+      summary: Flight resources
+      description: The default resource type for all flight requests
+      operationId: flightRequestResource
+      parameters:
+        - name: airport
+          in: header
+          description: The airport as IATA code
+          required: true
+          schema:
+            type: string
+            example: MUC
+      responses:
+        '200':
+          description: Returns a list of flights ordered by scheduled arrival time
+          content:
+            application/json:
+              schema:
+                type: string
+            application/xml:
+              schema:
+                type: string
+
+        '400':
+          description: One of the parameter values is not valid
+          
+  /airport/airportServiceRequest:
+    get:
+      tags:
+        - airport
+      summary: Airport services
+      description: Request a list of available services at an airport.
+      operationId: airportServiceRequest
+      parameters:
+        - name: airport
+          in: header
+          description: The airport as IATA code
+          required: true
+          schema:
+            type: string
+            example: MUC
+      responses:
+        '200':
+          description: Returns a list of services in alphabetical order
+          content:
+            application/json:
+              schema:
+                type: string
+            application/xml:
+              schema:
+                type: string
+
+        '400':
+          description: One of the parameter values is not valid
