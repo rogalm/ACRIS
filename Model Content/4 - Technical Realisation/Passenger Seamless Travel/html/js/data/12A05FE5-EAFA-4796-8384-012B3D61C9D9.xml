@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.2:1", "", "Seamless Travel Use Cases", "EARoot/EA2/EA846.htm", "188.png", "876", "0", "", "Custom diagram0","{7D1FF8C1-BEAF-4db7-9E4F-97353A3BFFC4}");
+tocTab[tocTab.length] = new Array("0.2.1", "1", "Print", "EARoot/EA2/EA1/EA864.htm", "4.png", "", "", "{6ECF130D-02CF-4a9f-A29A-74A2FF8B6C0C}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2", "1", "Passenger Information", "EARoot/EA2/EA2/EA945.htm", "4.png", "", "", "{6BED3655-5EBB-4008-BEDF-30C7DF807B52}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3", "1", "Airport Information", "EARoot/EA2/EA3/EA1072.htm", "4.png", "", "", "{1BBE4DE8-BE7F-4482-AF99-481C83B55A2D}", "Package");
+tocTab[tocTab.length] = new Array("0.2.4", "1", "Service Information", "EARoot/EA2/EA4/EA1187.htm", "4.png", "", "", "{10CF9166-661D-4922-91B2-D203F4C8DDFD}", "Package");
+tocTab[tocTab.length] = new Array("0.2.5", "1", "Trip Information", "EARoot/EA2/EA5/EA1331.htm", "4.png", "", "", "{4FB4002C-5F37-495b-BECD-3431089BAEBD}", "Package");
+tocTab[tocTab.length] = new Array("0.2.6", "1", "Flight Information", "EARoot/EA2/EA6/EA1430.htm", "4.png", "", "", "{CDF7F06B-1DD0-40d8-BA74-37143C3DF287}", "Package");
+tocTab[tocTab.length] = new Array("0.2.7", "1", "Bag Information", "EARoot/EA2/EA7/EA1487.htm", "4.png", "", "", "{267A7255-879D-4fc8-8EF0-48A059C1AE34}", "Package");
+tocTab[tocTab.length] = new Array("0.2.8", "1", "Location Information", "EARoot/EA2/EA8/EA1517.htm", "4.png", "", "", "{3F2A1C15-E73A-4118-B00A-96BF7800CE28}", "Package");
+tocTab[tocTab.length] = new Array("0.2.9", "1", "WIP", "EARoot/EA2/EA9/EA1560.htm", "4.png", "", "", "{B4164A93-D01D-47b4-B2D1-982CA9532A96}", "Package");

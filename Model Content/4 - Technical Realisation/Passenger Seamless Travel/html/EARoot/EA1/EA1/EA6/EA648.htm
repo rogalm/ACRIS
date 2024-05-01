@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Book Service</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Book Service </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../EA1.htm">Passenger Seamless Travel</a> / <a href="../../EA9.htm">Seamless Travel Use Cases 2016</a> / <a href="../EA11.htm">Use Cases</a> / <a href="EA647.htm">Services</a> / <a href="EA648.htm">Book Service</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA660.htm">Book Service_ActivityGraph</a></li>
+<li><img src="../../../../images/207.png" alt="Interaction"/> <a href="EA661.htm">Book Service_SequenceDiagram</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Book Service  : Public   UseCase</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06.12.2019 11:59:17</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">30.04.2024 23:37:20</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Raymond</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{1A7F15B0-7947-4671-990D-EF4AA7C980D5}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../../EA7.htm">Use Cases 2016</a>, <a href="EA643.htm">Services</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">USE CASE ID: 4.2&lt;br/&gt;&lt;br/&gt;USE CASE DESCRIPTION:&lt;br/&gt;The user books a service at the airport. The booking process and an optional payment have to be done. At the end the user has booked a service and got a receipt.&lt;br/&gt;&lt;br/&gt;ACTORS (GOAL):&lt;br/&gt;The user wants to book a service from a service provider.&lt;br/&gt;The service provider wants to get a definite booking of a service and also the payment for it.&lt;br/&gt;The payment provider has the goal to provide a secure payment.&lt;br/&gt;&lt;br/&gt;PERFORMANCE GOALS:&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;PRE CONDITIONS:&lt;br/&gt;The user has an account for the seamless travel platform. &lt;br/&gt;The service list is displayed&lt;br/&gt;&lt;br/&gt;POST CONDITIONS:&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;SCENARIO:&lt;br/&gt;1. The user presses the button to book a service&lt;br/&gt;2. The application loads the first form-page from the service provider, who offers the service, extends this form with already known data and asks the user to check the filled and fill out the missing fields. &lt;br/&gt;3. The user checks and fills out the form and presses next step.&lt;br/&gt;4. The application pre-validates the form and sends it to the service-provider to receive the next booking-step&lt;br/&gt;5. Number 2. To 4. Are repeated until the last form is sent.&lt;br/&gt;6. The application shows a booking summary to be checked by the user&lt;br/&gt;7. The user confirms the summary&lt;br/&gt;8. Extension-point for optional payment (see below)&lt;br/&gt;9. The application request a fixed booking from the service-provider&lt;br/&gt;10. The application provider confirms the booking&lt;br/&gt;11. The application sends the confirmation to the user and displays it&lt;br/&gt;12. The user leaves the booking process&lt;br/&gt;&lt;br/&gt;EXTENSION POINT:&lt;br/&gt;1. The application sends the payment data to the payment-provider&lt;br/&gt;2. The application displays the payment-provider&#8217;s form&lt;br/&gt;3. The user process the payment-process without any communication with the system.&lt;br/&gt;4. At the end of payment process the payment-provider send a payment-confirmation to the system&lt;br/&gt;5. The application rechecks the confirmation by asking the payment-provider for the payment-status&lt;br/&gt;6. The payment-provider confirms the request&lt;br/&gt;&lt;br/&gt;ALTERNATIVE SCENARIO:&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;RELATED REQUIREMENTS:&lt;br/&gt;PCI compliance and privacy requirements are dealt with.&lt;br/&gt;Payment provider may be interchangeable (linked to service).&lt;br/&gt;&lt;br/&gt;RELATED RULES:&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;PERFORMANCE MEASURES:&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;VERSION/HISTORY:&lt;br/&gt;0.1; 19.06.15; Lücking; added actors&lt;br/&gt;0.2; 01.07.15; Stiffel; Added Scenario&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent != null ? parent.toggleItem('Scenario') : toggleItem('Scenario');" id="ScenarioTitle">Scenarios</li>
+			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+		</ul>
+		<div class="ItemBody" id="ScenarioTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="90%" class="TableHeading">Scenario</td>
+					<td width="10%" class="TableHeading">Type</td>
+				</tr>
+				<tr>
+					<td width="90%" class="TableRow">Book Service</td>
+					<td width="10%" class="TableRow">Basic Path</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent">
+						Details:
+							<div id="detailsDIVScenario911" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">&lt;ol&gt;<br />&lt;li&gt;The user presses the button to book a service&lt;/li&gt;&lt;li&gt;The application loads the first form-page from the service provider, who offers the service, extends this form with already known data and asks the user to check the filled and fill out the missing fields.&lt;/li&gt;&lt;li&gt;The user checks and fills out the form and presses next step.&lt;/li&gt;&lt;li&gt;The application pre-validates the form and sends it to the service-provider to receive the next booking-step&lt;/li&gt;&lt;li&gt;Repeat steps 2, 3 and 4 until the last form is sent..&lt;/li&gt;&lt;li&gt;The application shows a booking summary to be checked by the user&lt;/li&gt;&lt;li&gt;The user confirms the summary&lt;/li&gt;&lt;li&gt;Extension-point for optional payment (see below)&lt;/li&gt;&lt;li&gt;The application request a fixed booking from the service-provider&lt;/li&gt;&lt;li&gt;The application provider confirms the booking&lt;/li&gt;&lt;li&gt;The application sends the confirmation to the user and displays it&lt;/li&gt;&lt;li&gt;The user leaves the booking process&lt;/li&gt;&lt;/ol&gt;&lt;p/&gt;</div>
+
+							</div>
+						</div>
+						<div class="StrucuturedDivParent">
+Steps:
+	<div id="stepDIVScenario911" class="StrucuturedDiv" >
+		<div class="ObjectDetailsNotes">1. The user presses the button to book a service&lt;br/&gt; <br />2. The application loads the first form-page from the service provider, who offers the service, extends this form with already known data and asks the user to check the filled and fill out the missing fields.&lt;br/&gt; <br />3. The user checks and fills out the form and presses next step.&lt;br/&gt; <br />4. The application pre-validates the form and sends it to the service-provider to receive the next booking-step&lt;br/&gt; <br />5. Repeat steps 2, 3 and 4 until the last form is sent..&lt;br/&gt; <br />6. The application shows a booking summary to be checked by the user&lt;br/&gt; <br />7. The user confirms the summary&lt;br/&gt; <br />8. Extension-point for optional payment (see below)&lt;br/&gt; <br />9. The application request a fixed booking from the service-provider&lt;br/&gt; <br />10. The application provider confirms the booking&lt;br/&gt; <br />11. The application sends the confirmation to the user and displays it&lt;br/&gt; <br />12. The user leaves the booking process&lt;br/&gt; <br /></div>
+	</div>
+</div>
+
+						
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

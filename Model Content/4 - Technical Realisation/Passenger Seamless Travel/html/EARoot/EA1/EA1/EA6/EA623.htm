@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Book Service_ActivityGraph</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Book Service_ActivityGraph </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../EA1.htm">Passenger Seamless Travel</a> / <a href="../../EA9.htm">Seamless Travel Use Cases 2016</a> / <a href="../EA11.htm">Use Cases</a> / <a href="EA647.htm">Services</a> / <a href="EA648.htm">Book Service</a> / <a href="EA660.htm">Book Service_ActivityGraph</a> / <a href="EA623.htm">Book Service_ActivityGraph</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../images/181.png" alt="Diagram"/> <a href="EA623.htm">Book Service_ActivityGraph</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA663.htm">Extension-point for optional payment (see below)</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA664.htm">Repeat steps 2, 3 and 4 until the last form is sent..</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA666.htm">The application loads the first form-page from the service provider, who offers the service, extends this form with already known data and asks the user to check the filled and fill out the missing fields.</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA667.htm">The application pre-validates the form and sends it to the service-provider to receive the next booking-step</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA668.htm">The application provider confirms the booking</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA669.htm">The application request a fixed booking from the service-provider</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA670.htm">The application sends the confirmation to the user and displays it</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA671.htm">The application shows a booking summary to be checked by the user</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA672.htm">The user checks and fills out the form and presses next step.</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA673.htm">The user confirms the summary</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA674.htm">The user leaves the booking process</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA675.htm">The user presses the button to book a service</a></li>
+<li><img src="../../../../images/69.png" alt="StateNode"/> <a href="EA662.htm">End</a></li>
+<li><img src="../../../../images/68.png" alt="StateNode"/> <a href="EA665.htm">Start</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA624.png" usemap="#EA624" border="0" />
+
+<MAP NAME="EA624">
+<area shape="rect" coords="65,1570,85,1590" href="EA662.htm" target="_self">
+<area shape="rect" coords="10,1450,145,1525" href="EA674.htm" target="_self">
+<area shape="rect" coords="10,1330,145,1405" href="EA670.htm" target="_self">
+<area shape="rect" coords="10,1210,145,1285" href="EA668.htm" target="_self">
+<area shape="rect" coords="10,1090,145,1165" href="EA669.htm" target="_self">
+<area shape="rect" coords="10,970,145,1045" href="EA663.htm" target="_self">
+<area shape="rect" coords="10,850,145,925" href="EA673.htm" target="_self">
+<area shape="rect" coords="10,730,145,805" href="EA671.htm" target="_self">
+<area shape="rect" coords="10,610,145,685" href="EA664.htm" target="_self">
+<area shape="rect" coords="10,490,145,565" href="EA667.htm" target="_self">
+<area shape="rect" coords="10,370,145,445" href="EA672.htm" target="_self">
+<area shape="rect" coords="10,250,145,387" href="EA666.htm" target="_self">
+<area shape="rect" coords="10,130,145,205" href="EA675.htm" target="_self">
+<area shape="rect" coords="65,10,85,30" href="EA665.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Book Service_ActivityGraph : Activity diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06.12.2019 12:10:34</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">06.12.2019 12:10:34</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Michelle</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{236A18B6-9406-4cb8-9715-E3444BB9C5BE}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

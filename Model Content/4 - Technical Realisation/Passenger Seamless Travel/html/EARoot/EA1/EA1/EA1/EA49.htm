@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Change Airport_ActivityGraph</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Change Airport_ActivityGraph </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../EA1.htm">Passenger Seamless Travel</a> / <a href="../../EA9.htm">Seamless Travel Use Cases 2016</a> / <a href="../EA11.htm">Use Cases</a> / <a href="EA73.htm">Account</a> / <a href="EA75.htm">Change Airport</a> / <a href="EA87.htm">Change Airport_ActivityGraph</a> / <a href="EA49.htm">Change Airport_ActivityGraph</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../images/181.png" alt="Diagram"/> <a href="EA49.htm">Change Airport_ActivityGraph</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA92.htm">The application detects that the user is at an Seamless Travel enabled airport that is not his default airport nor the one currently selected. The application then automatically switches to the airport the user is currently at.</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA93.htm">The application displays a list with all airports which are available in the seamless travel platform</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA94.htm">The application stores the current airport in the user profile</a></li>
+<li><img src="../../../../images/21.png" alt="Activity"/> <a href="EA95.htm">The user selects one of these choices</a></li>
+<li><img src="../../../../images/56.png" alt="Decision"/> <a href="EA89.htm">Alternate1</a></li>
+<li><img src="../../../../images/69.png" alt="StateNode"/> <a href="EA90.htm">End</a></li>
+<li><img src="../../../../images/68.png" alt="StateNode"/> <a href="EA91.htm">Start</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA50.png" usemap="#EA50" border="0" />
+
+<MAP NAME="EA50">
+<area shape="rect" coords="65,730,85,750" href="EA90.htm" target="_self">
+<area shape="rect" coords="10,610,145,685" href="EA94.htm" target="_self">
+<area shape="rect" coords="10,490,145,565" href="EA95.htm" target="_self">
+<area shape="rect" coords="10,250,145,325" href="EA93.htm" target="_self">
+<area shape="rect" coords="200,245,335,395" href="EA92.htm" target="_self">
+<area shape="rect" coords="62,118,88,152" href="EA89.htm" target="_self">
+<area shape="rect" coords="65,10,85,30" href="EA91.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Change Airport_ActivityGraph : Activity diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06.12.2019 12:10:31</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">06.12.2019 12:10:31</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Bob Logan</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{C2C344A9-3C98-419d-AE15-0CB4B2D03FF1}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
