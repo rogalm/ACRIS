@@ -38,7 +38,7 @@ tbd
 
 ### The branching concept
 
-![ASM Branching Concept](https://github.com/rogalm/ACRIS/blob/main/Images/Branching-Concept.JPG)
+![ASM Branching Concept](https://github.com/rogalm/ACRIS/blob/main/Images/Branching-Concept.jpg)
 
 | Branch | Description | Permissions |
 | ------ | ----------- | ----------- |
