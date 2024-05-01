@@ -1,0 +1,1 @@
+Swagger ui: https://rogalm.github.io/ACRIS/Model%20Content/4%20-%20Technical%20Realisation/Passenger%20Seamless%20Travel/implementation/
