@@ -1,5 +1,5 @@
 **!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**<br>
-**This repository is an example of a future representation of the ACRIS Semantic Model on GitHub. The complete content is exemplary and not intended for further use!**
+**This repository is an example of a future representation of the ACRIS Semantic Model on GitHub. The complete content is exemplary and not intended for further use!**<br>
 **!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**<br><br>
 
 
