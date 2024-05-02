@@ -1,6 +1,6 @@
-**!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
+**!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**<br>
 **This repository is an example of a future representation of the ACRIS Semantic Model on GitHub. The complete content is exemplary and not intended for further use!**
-**!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
+**!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**<br><br>
 
 
 ![ACRIS](https://github.com/rogalm/ACRIS/blob/main/Images/ACRISLogo.JPG)
