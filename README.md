@@ -50,10 +50,10 @@ tbd
 
 | Branch | Description | Permissions |
 | ------ | ----------- | ----------- |
-| main | The main branch alwas holds the published releases of the ASM. Published releases are tagged with a release number like 'ASM Release 2.1' | ACRIS Data Standards Manager |
-| EA_Model | The EA_Model branch holds changes which are exported from the EA model. | ACRIS Data Standards Manager |
-| Pre_Release_x_y | After publishing a new release of the ASM, a new pre release branch with the future ASM version number is generated as base for upcomming changes. | Public |
-| Work branches | Like 'MUC' or 'SFO' in the example image are branches for ACRIS projects, Airports or any other company. This branches are used for to make extensions or changes to the model.  | Public |
+| main | The ASM releases are published on the main branch. These are tagged with a tag in the form 'Release x.y'. | ACRIS Data Standards Manager |
+| EA_Model | The core of the ASM is stored in a separate database as an Enterprise Architect model and is edited with the Enterprise Architect tool from Sparxsystems. Changes to this core in EA are pushed to the EA_Model branch. | ACRIS Data Standards Manager |
+| Pre_Release_x_y | After a new ASM release has been published on the main branch, a new pre-release branch is created with the future ASM version number as the basis for future changes. All proposed and accepted changes (via pull request) are available in this branch until a new release is published. | Public |
+| Work branches | Anyone who wants to suggest changes or enhancements to ASM can create their own branch from the Pre_Release branch - as shown in the image above for the 'MUC', 'SFO' or 'ACRIS Project' branches. The changes are merged to the Pre_Release branch via merge request.  | Public |
 
 ### ASM Change Process
 
